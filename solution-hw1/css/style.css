@@ -2,20 +2,50 @@
     width: 400px;
 }
 
-.bold-product
+/* .bold-product
 {
     text-align: center;
     color: black;
     text-decoration: none; 
     cursor: pointer;
     font-weight: bold;
-}
-.cart {
+} */
+.bold-product {
     text-align: center;
+
+}
+.bold-product a {
+    padding-left: 10px;
+    padding-right: 10px;
     color: black;
     text-decoration: none; 
     cursor: pointer;
     font-weight: bold;
+    display: inline-block;
+}
+
+.bold-product a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.cart {
+    text-align: center;
+
+}
+.cart a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    text-decoration: none; 
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cart a:hover {
+    background-color: yellow;
+    color: black;
 }
 
 .cinammon-roll-intro {
@@ -38,14 +68,14 @@
 
 .underline_original {
     text-decoration: underline;
-    padding-right: 150px;
+    padding-right: 240px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
 }
 
 .underline_original :hover {
-    font-weight:lighter;
+    font-weight:bold;
 }
 
 .price {
@@ -56,46 +86,62 @@
 
 .underline_apple {
     text-decoration: underline;
+    padding-right: 255px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.underline_apple :hover {
+    font-weight:bold;
+}
+
+.underline_raisin {
+    text-decoration: underline;
+    padding-right: 255px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.underline_raisin :hover {
+    font-weight:bold;
+}
+.underline_walnut {
+    text-decoration: underline;
+    padding-right: 250px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.underline_walnut :hover {
+    font-weight:bold;
+}
+
+.underline_double-chocolate {
+    text-decoration: underline;
     padding-right: 175px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
 }
 
-.underline_raisin {
-    text-decoration: underline;
-    padding-right: 170px;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.underline_walnut {
-    text-decoration: underline;
-    padding-right: 170px;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.underline_double-chocolate {
-    text-decoration: underline;
-    padding-left: 70px;
-    padding-right: 120px;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: normal;
+.underline_double-chocolate :hover {
+    font-weight:bold;
 }
 
 .underline_strawberry {
     text-decoration: underline;
-    padding-left: 0px;
-    padding-right: 120px;
+    padding-right: 225px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
 }
 
+.underline_strawberry :hover {
+    font-weight:bold;
+}
 
 .button-container {
     background: none; 
@@ -150,12 +196,6 @@
 .pack_size_dropdown select {
     font-size: 16px;      
     padding-right: 100px;      
-}
-
-.customize_price {
-    text-align: right;
-    padding-bottom: 50px;
-    padding-top: 10px;
 }
 
 .price_button {
