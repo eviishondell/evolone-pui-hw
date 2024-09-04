@@ -276,3 +276,21 @@
     border: 5px solid black; 
     text-align: center;
 }
+
+/* .checkout {
+    display: inline-block;
+} */
+.checkout-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 10px; /* Optional: Adds space between items */
+}
+
+.price p {
+    margin: 0; /* Removes default margin from <p> */
+}
+
+.checkout button {
+    padding-top: 10px;
+    padding: 5px 10px; /* Optional: Adjusts button padding */
+}
