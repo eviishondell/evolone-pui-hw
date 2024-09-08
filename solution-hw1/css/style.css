@@ -1,7 +1,6 @@
 .Logo {
-    width: 400px;
+    width: 600px;
 }
-
 
 .bold-product {
     text-align: center;
@@ -61,7 +60,8 @@
 
 .underline_original {
     text-decoration: underline;
-    padding-right: 240px;
+    padding-right: 252px;
+    color: black;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
@@ -71,18 +71,22 @@
     font-weight:bold;
 }
 
-.price {
-    text-align: center;
-    padding-right: 350px; 
+
+.price p {
+    text-decoration: none;
+    color: black; 
     margin-top: -15px;
+    text-align: center;
+    padding-right: 370px;
 }
 
 .underline_apple {
     text-decoration: underline;
-    padding-right: 255px;
+    padding-right: 270px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
+    color: black;
 }
 
 .underline_apple :hover {
@@ -91,10 +95,11 @@
 
 .underline_raisin {
     text-decoration: underline;
-    padding-right: 255px;
+    padding-right: 270px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
+    color: black;
 }
 
 .underline_raisin :hover {
@@ -102,7 +107,8 @@
 }
 .underline_walnut {
     text-decoration: underline;
-    padding-right: 250px;
+    padding-right: 260px;
+    color: black;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
@@ -114,7 +120,8 @@
 
 .underline_double-chocolate {
     text-decoration: underline;
-    padding-right: 175px;
+    color: black;
+    padding-right: 190px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
@@ -126,10 +133,11 @@
 
 .underline_strawberry {
     text-decoration: underline;
-    padding-right: 225px;
+    padding-right: 235px;
     text-align: center;
     font-family: sans-serif;
     font-weight: normal;
+    color: black;
 }
 
 .underline_strawberry :hover {
@@ -153,54 +161,62 @@
     text-align: center; 
 }
 
+.original-image {
+    width: 100%; 
+    height: auto;
+}
+
+.details-container {
+    flex: 2; 
+    padding-left: 175px;
+}
+
 .customize_text {
     text-align: left;
+    margin-bottom: 20px;
 }
 
-.center-text {
-    text-align: center;
-}
-
-.glaze_dropdown {
-    display: flex;             
-    flex-direction: column;     
-}
-
-.glaze_dropdown label {
-    margin-bottom: 10px; 
-    padding-right: 70px;        
-    text-align: left;
-}
-
+.glaze_dropdown, 
 .pack_size_dropdown {
     display: flex;             
     flex-direction: column;     
-    align-items: left;      
-    width: 100%;
-       
+    width: 300px;
+    margin-bottom: 20px;
 }
 
+.glaze_dropdown label, 
 .pack_size_dropdown label {
-    padding-top: 20px;
     margin-bottom: 10px; 
     text-align: left;
 }
 
-.pack_size_dropdown select {
+.pack_size_dropdown select, 
+.glaze_dropdown select {
     font-size: 16px;      
     padding-right: 100px;      
 }
 
-.price_button {
-    display: inline-block;
-    padding: 10px 20px; 
-    border-radius: 0; 
-    cursor: pointer; 
-    text-align: center; 
-
+.checkout-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
+.checkout {
+    display: inline-block;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    text-align: center;
+}
+
+.add-to-cart {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
 .highlight-container {
+    text-decoration: none;
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -214,6 +230,26 @@
 .highlight-container:hover {
     background-color: yellow; 
 }
+
+.highlight-container:hover .underline_original p {
+    font-weight: bold; 
+}
+.highlight-container:hover .underline_apple p {
+    font-weight: bold; 
+}
+.highlight-container:hover .underline_raisin p {
+    font-weight: bold; 
+}
+.highlight-container:hover .underline_walnut p {
+    font-weight: bold; 
+}
+.highlight-container:hover .underline_double-chocolate p {
+    font-weight: bold; 
+}
+.highlight-container:hover .underline_strawberry p {
+    font-weight: bold; 
+}
+
 
 .product-container {
 
