@@ -175,7 +175,7 @@
     text-align: left;
     margin-bottom: 20px;
 }
-
+/* w3 schools */
 .glaze_dropdown, 
 .pack_size_dropdown {
     display: flex;             
@@ -327,4 +327,10 @@
 
 .shopping-container {
     width: 200px;
+}
+
+.remove {
+    padding-top: 10px;
+    text-decoration: underline;
+    font-weight: bold;
 }
