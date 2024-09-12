@@ -9,7 +9,7 @@
 /* Styling for the logo */
 .logo {
     margin-right: 20px;
-    height: 285px; /* Adjust as needed */
+    height: 285px;
 }
 
 /* Styling for navigation links */
@@ -20,31 +20,31 @@
     padding: 5px;
 }
 .nav-link:hover {
-    background-color: yellow; /* Background highlight color (Yellow) */
-    color: black; /* Ensure text color is black */
-    font-weight: bold; /* Make text bold */
-    text-decoration: none; /* Remove underline on hover */
+    background-color: yellow;
+    color: black; 
+    font-weight: bold;
+    text-decoration: none;
 }
 .nav-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 100%; /* Take full width */
+    width: 100%;
 }
 
 .nav-link-container:hover {
-    background-color: yellow; /* Background highlight color (Yellow) */
-    color: black; /* Ensure text color is black */
-    font-weight: bold; /* Make text bold */
-    text-decoration: none; /* Remove underline on hover */
+    background-color: yellow; 
+    color: black; 
+    font-weight: bold; 
+    text-decoration: none; 
 }
 .nav-link-container {
-    margin-right: 20px; /* Spacing between links */
+    margin-right: 20px;
 }
 /* Container for navigation links */
 .nav-links {
     display: flex;
-    gap: 20px; /* Space between links */
+    gap: 20px; 
     justify-content: flex-end;
 }
 .intro {
@@ -74,8 +74,8 @@
 
 /* Styling for product images */
 .product-gallery-img img {
-    width: 100%; /* Make image take full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
     border: solid black 2px;
 }
 
@@ -83,7 +83,7 @@
 .all-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; 
     align-items: center;
 }
 
@@ -91,13 +91,13 @@
 .product-gallery-container {
     width: 30%;
     padding: 10px;
-    position: relative; /* Ensure that pseudo-elements are positioned correctly */
-    overflow: hidden; /* Prevents overflow from the hover effect */
+    position: relative; 
+    overflow: hidden; /*  w3 */
 }
 
 /* Highlight effect on hover */
 .product-gallery-container:hover {
-    background-color: yellow; /* Light yellow background highlight */
+    background-color: yellow; 
 }
 
 .product-gallery-container:hover .product-name p {
@@ -108,7 +108,7 @@
 a {
     color: black;
     text-decoration: none;
-    display: block; /* Ensure the link covers the whole container */
+    display: block; 
 }
 
 
@@ -125,27 +125,26 @@ a:active {
 
 
 .detail-image img {
-    width: 100%; /* Make image take full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
     border: solid black 2px;
 }
 .original-bun-text{
     text-align: center;
 }
-/* Flex container for image and details */
-/* Flex container for image and details */
+
 .flex-container {
     display: flex;
-    justify-content: center; /* Horizontally centers the content */
+    justify-content: center; 
     padding: 20px;
-    min-height: 100vh; /* Ensures full-screen height to vertically center */
+    min-height: 100vh;
 }
 
 /* Styling for the image */
 .detail-image img {
-    max-width: 600px; /* Adjust size as needed */
+    max-width: 600px; 
     height: auto;
-    margin-right: 20px; /* Space between image and content */
+    margin-right: 20px; 
 }
 
 /* Container for the details (text and dropdowns) */
@@ -153,7 +152,7 @@ a:active {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Aligns items to the top */
+    justify-content: flex-start; 
     max-width: 500px;
 }
 
@@ -177,29 +176,25 @@ select {
     padding: 5px;
 }
 
-/* Container for the price and add-to-cart button */
 .price-button-container {
     display: flex;
-    flex-direction: column; /* Stack price and button vertically */
-    align-items: center; /* Center the price and button horizontally */
+    flex-direction: column;
+    align-items: center; 
     margin-top: 15px;
 }
 
 
-
 .checkout {
     display: flex;
-    align-items: center; /* Align items vertically */
-    gap: 15px; /* Space between price and button */
+    align-items: center; 
+    gap: 15px;
 }
 
-/* Styling for the price */
 .price {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Styling for Add to Cart button */
 .add-to-cart {
     padding: 10px 20px;
     background-color: white;
@@ -219,20 +214,20 @@ select {
 /* Flex container for the entire row */
 .product-container {
     display: flex;
-    justify-content: flex-end; /* Align items to the end (right) */
-    align-items: center; /* Center columns vertically */
-    width: 100%; /* Full width of container */
+    justify-content: flex-end;
+    align-items: center; 
+    width: 100%;
     margin-top: 20px;
 }
 
 /* First Column: Image and Remove Button */
 .image-column {
-    flex: 0.2; /* Adjust flex space to ensure proper alignment */
+    flex: 0.2; /*  playing around */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center image and button */
+    align-items: center;
     text-align: center;
-    margin-left: 10px; /* Add margin if needed */
+    margin-left: 10px;
 }
 
 .image-column img {
@@ -255,13 +250,13 @@ select {
 
 /* Second Column: Product Details */
 .details-column {
-    flex: 0.3; /* Adjust flex space for details column */
+    flex: 0.3; 
     padding-bottom: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: flex-start; /* Align items to the start horizontally */
-    margin-left: 10px; /* Add margin to the left of the details column */
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-left: 10px; 
 }
 
 /* Styling for product name */
@@ -273,10 +268,10 @@ select {
 
 /* Third Column: Price */
 .price-column {
-    flex: 0.2; /* Adjust flex space for price column */
+    flex: 0.2;
     display: flex;
-    justify-content: center; /* Center the price horizontally */
-    align-items: center; /* Vertically center the price */
+    justify-content: center; 
+    align-items: center;
 }
 
 .price {
@@ -294,10 +289,10 @@ select {
 .checkout-wrapper {
     padding-top: 20px;
     display: flex;
-    justify-content: flex-end; /* Align content to the right */
-    align-items: center; /* Vertically center the items */
-    margin-right: 120px; /* Adjust margin as needed */
-    gap: 520px; /* Large space between "Total:" and the price */
+    justify-content: flex-end;
+    align-items: center; 
+    margin-right: 120px; 
+    gap: 520px; /* w3 */
 }
 
 /* Styling for the total text */
@@ -315,7 +310,7 @@ select {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
-    margin-right: 120px; /* Align button to the right */
+    margin-right: 120px; 
 }
 
 /* Styling for the checkout button */
