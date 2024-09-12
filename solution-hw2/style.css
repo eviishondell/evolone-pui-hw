@@ -276,6 +276,7 @@ select {
 
 .price {
     font-size: 20px;
+    font-weight: normal;
 }
 
 .total-underline {
