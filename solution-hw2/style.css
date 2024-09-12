@@ -17,8 +17,13 @@
     color: black;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
     padding: 5px;
+}
+.nav-link:hover {
+    background-color: yellow; /* Background highlight color (Yellow) */
+    color: black; /* Ensure text color is black */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline on hover */
 }
 .nav-content {
     display: flex;
@@ -43,9 +48,9 @@
     justify-content: flex-end;
 }
 .intro {
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-right: 700px;
     font-size: 20px;
-    font-weight: bold;
     text-align: left;
 }
 .underline {
@@ -138,7 +143,7 @@ a:active {
 
 /* Styling for the image */
 .detail-image img {
-    max-width: 400px; /* Adjust size as needed */
+    max-width: 600px; /* Adjust size as needed */
     height: auto;
     margin-right: 20px; /* Space between image and content */
 }
@@ -157,6 +162,7 @@ a:active {
     font-size: 24px;
     line-height: 1.5;
     text-align: left;
+    font-weight: normal;
 }
 
 /* Dropdown styling */
@@ -190,7 +196,7 @@ select {
 /* Styling for the price */
 .price {
     font-size: 20px;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 /* Styling for Add to Cart button */
@@ -275,7 +281,6 @@ select {
 
 .price {
     font-size: 20px;
-    font-weight: bold;
 }
 
 .total-underline {
@@ -284,3 +289,46 @@ select {
     margin-left: 0; 
     margin-top: 5px;
 }
+
+/* Flex container for total cost and price */
+.checkout-wrapper {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Vertically center the items */
+    margin-right: 120px; /* Adjust margin as needed */
+    gap: 520px; /* Large space between "Total:" and the price */
+}
+
+/* Styling for the total text */
+.total-cost {
+    font-size: 18px;
+}
+
+/* Styling for the price */
+.checkout-cost {
+    font-size: 18px;
+}
+
+/* Center the checkout button */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 120px; /* Align button to the right */
+}
+
+/* Styling for the checkout button */
+.button-container-checkout {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid 1px black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-container-checkout:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
