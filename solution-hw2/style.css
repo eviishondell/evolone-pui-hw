@@ -1,0 +1,286 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Styling for the logo */
+.logo {
+    margin-right: 20px;
+    height: 285px; /* Adjust as needed */
+}
+
+/* Styling for navigation links */
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%; /* Take full width */
+}
+
+.nav-link-container:hover {
+    background-color: yellow; /* Background highlight color (Yellow) */
+    color: black; /* Ensure text color is black */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline on hover */
+}
+.nav-link-container {
+    margin-right: 20px; /* Spacing between links */
+}
+/* Container for navigation links */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+    justify-content: flex-end;
+}
+.intro {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+.underline {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-left: 0; 
+    margin-top: 5px;
+}
+/* Styling for the product name */
+.product-name p {
+    color: black;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* Styling for the product price */
+.product-price p {
+    color: black;
+    font-weight: normal;
+}
+
+/* Styling for product images */
+.product-gallery-img img {
+    width: 100%; /* Make image take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border: solid black 2px;
+}
+
+/* Flexbox container for all items */
+.all-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+/* Each product container takes up one-third of the row */
+.product-gallery-container {
+    width: 30%;
+    padding: 10px;
+    position: relative; /* Ensure that pseudo-elements are positioned correctly */
+    overflow: hidden; /* Prevents overflow from the hover effect */
+}
+
+/* Highlight effect on hover */
+.product-gallery-container:hover {
+    background-color: yellow; /* Light yellow background highlight */
+}
+
+.product-gallery-container:hover .product-name p {
+    font-weight: bold;
+}
+
+/* Prevent links from turning purple and set them to black */
+a {
+    color: black;
+    text-decoration: none;
+    display: block; /* Ensure the link covers the whole container */
+}
+
+
+/* Ensure visited links stay black */
+a:visited {
+    color: black;
+}
+
+/* Ensure active links are black */
+a:active {
+    color: black;
+}
+/* ______________________ */
+
+
+.detail-image img {
+    width: 100%; /* Make image take full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border: solid black 2px;
+}
+.original-bun-text{
+    text-align: center;
+}
+/* Flex container for image and details */
+/* Flex container for image and details */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    padding: 20px;
+    min-height: 100vh; /* Ensures full-screen height to vertically center */
+}
+
+/* Styling for the image */
+.detail-image img {
+    max-width: 400px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between image and content */
+}
+
+/* Container for the details (text and dropdowns) */
+.details-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns items to the top */
+    max-width: 500px;
+}
+
+/* Styling for the customize text */
+.customize_text h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Dropdown styling */
+.glaze_dropdown,
+.pack_size_dropdown {
+    margin-top: 15px;
+    text-align: left;
+}
+
+select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+/* Container for the price and add-to-cart button */
+.price-button-container {
+    display: flex;
+    flex-direction: column; /* Stack price and button vertically */
+    align-items: center; /* Center the price and button horizontally */
+    margin-top: 15px;
+}
+
+
+
+.checkout {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 15px; /* Space between price and button */
+}
+
+/* Styling for the price */
+.price {
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+/* Styling for Add to Cart button */
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid black 2px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: yellow;
+}
+
+.checkout-container {
+    padding-top: 20px;
+}
+/* Flex container for the entire row */
+.product-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the end (right) */
+    align-items: center; /* Center columns vertically */
+    width: 100%; /* Full width of container */
+    margin-top: 20px;
+}
+
+/* First Column: Image and Remove Button */
+.image-column {
+    flex: 0.2; /* Adjust flex space to ensure proper alignment */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center image and button */
+    text-align: center;
+    margin-left: 10px; /* Add margin if needed */
+}
+
+.image-column img {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 5px; /* Space between image and remove button */
+}
+
+.remove {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/* Second Column: Product Details */
+.details-column {
+    flex: 0.3; /* Adjust flex space for details column */
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align items to the start horizontally */
+    margin-left: 10px; /* Add margin to the left of the details column */
+}
+
+/* Styling for product name */
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Third Column: Price */
+.price-column {
+    flex: 0.2; /* Adjust flex space for price column */
+    display: flex;
+    justify-content: center; /* Center the price horizontally */
+    align-items: center; /* Vertically center the price */
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total-underline {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-left: 0; 
+    margin-top: 5px;
+}
