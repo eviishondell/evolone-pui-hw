@@ -1,4 +1,3 @@
-// Glazing options array
 let glazingOptions = [
     { name: "Keep original", priceAdaptation: 0.00 },
     { name: "Sugar milk", priceAdaptation: 0.00 },
@@ -6,7 +5,6 @@ let glazingOptions = [
     { name: "Double chocolate", priceAdaptation: 1.50 }
 ];
 
-// Pack size options array
 let packSizeOptions = [
     { size: 1, priceMultiplier: 1 },
     { size: 3, priceMultiplier: 3 },
@@ -14,7 +12,6 @@ let packSizeOptions = [
     { size: 12, priceMultiplier: 10 }
 ];
 
-// Get the select elements
 const basePrice = 2.49;
 const glazingSelect = document.getElementById('glazingSelect');
 const packSizeSelect = document.getElementById('packSizeSelect');
@@ -23,19 +20,13 @@ const totalPriceElement = document.getElementById('totalPrice');
 let selectedGlazingPrice = 0;
 let selectedPackMultiplier = 1;
 
-
-
-// Populate the drop-down options dynamically
 function populateOptions() {
-    // Populate glazing options
     for (let i = 0; i < glazingOptions.length; i++) {
         let option = document.createElement('option');
         option.value = glazingOptions[i].priceAdaptation;
         option.textContent = glazingOptions[i].name;
         glazingSelect.appendChild(option);
     }
-
-    // Populate pack size options
     for (let i = 0; i < packSizeOptions.length; i++) {
         let option = document.createElement('option');
         option.value = packSizeOptions[i].priceMultiplier;
@@ -44,23 +35,19 @@ function populateOptions() {
     }
 }
 
-// Triggered when glazing option changes
 function glazingChange(element) {
     selectedGlazingPrice = parseFloat(element.value);
-    updatePrice();  // Recalculate total price
+    updatePrice();  
 }
 
-// Triggered when pack size option changes
 function packSizeChange(element) {
     selectedPackMultiplier = parseFloat(element.value);
-    updatePrice();  // Recalculate total price
+    updatePrice();  
 }
 
-// Function to update the total price
 function updatePrice() {
     const totalPrice = (basePrice + selectedGlazingPrice) * selectedPackMultiplier;
     totalPriceElement.textContent = totalPrice.toFixed(2);  // Update displayed price
 }
 
-// Populate the options when the page loads
 populateOptions();
