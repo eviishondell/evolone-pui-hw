@@ -1,0 +1,330 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* Styling for the logo */
+.logo {
+    margin-right: 20px;
+    height: 285px;
+}
+
+/* Styling for navigation links */
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+.nav-link:hover {
+    background-color: yellow;
+    color: black; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.nav-link-container:hover {
+    background-color: yellow; 
+    color: black; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+.nav-link-container {
+    margin-right: 20px;
+}
+/* Container for navigation links */
+.nav-links {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+}
+.intro {
+    margin-top: 50px;
+    margin-right: 700px;
+    font-size: 20px;
+    text-align: left;
+}
+.underline {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-left: 0; 
+    margin-top: 5px;
+}
+/* Styling for the product name */
+.product-name p {
+    color: black;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* Styling for the product price */
+.product-price p {
+    color: black;
+    font-weight: normal;
+}
+
+/* Styling for product images */
+.product-gallery-img img {
+    width: 100%; 
+    height: auto; 
+    border: solid black 2px;
+}
+
+/* Flexbox container for all items */
+.all-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Each product container takes up one-third of the row */
+.product-gallery-container {
+    width: 30%;
+    padding: 10px;
+    position: relative; 
+    overflow: hidden; /*  w3 */
+}
+
+/* Highlight effect on hover */
+.product-gallery-container:hover {
+    background-color: yellow; 
+}
+
+.product-gallery-container:hover .product-name p {
+    font-weight: bold;
+}
+
+/* Prevent links from turning purple and set them to black */
+a {
+    color: black;
+    text-decoration: none;
+    display: block; 
+}
+
+
+/* Ensure visited links stay black */
+a:visited {
+    color: black;
+}
+
+/* Ensure active links are black */
+a:active {
+    color: black;
+}
+/* ______________________ */
+
+
+.detail-image img {
+    width: 100%; 
+    height: auto; 
+    border: solid black 2px;
+}
+.original-bun-text{
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Styling for the image */
+.detail-image img {
+    max-width: 600px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+/* Container for the details (text and dropdowns) */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    max-width: 500px;
+}
+
+/* Styling for the customize text */
+.customize_text h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: normal;
+}
+
+/* Dropdown styling */
+.glaze_dropdown,
+.pack_size_dropdown {
+    margin-top: 15px;
+    text-align: left;
+}
+
+select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.price-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 15px;
+}
+
+
+.checkout {
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid black 2px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: yellow;
+}
+
+.checkout-container {
+    padding-top: 20px;
+}
+/* Flex container for the entire row */
+.product-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* First Column: Image and Remove Button */
+.image-column {
+    flex: 0.2; /*  playing around */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.image-column img {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 5px; /* Space between image and remove button */
+}
+
+.remove {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/* Second Column: Product Details */
+.details-column {
+    flex: 0.3; 
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-left: 10px; 
+}
+
+/* Styling for product name */
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Third Column: Price */
+.price-column {
+    flex: 0.2;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.total-underline {
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-left: 0; 
+    margin-top: 5px;
+}
+
+/* Flex container for total cost and price */
+.checkout-wrapper {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-right: 120px; 
+    gap: 520px; /* w3 */
+}
+
+/* Styling for the total text */
+.total-cost {
+    font-size: 18px;
+}
+
+/* Styling for the price */
+.checkout-cost {
+    font-size: 18px;
+}
+
+/* Center the checkout button */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 120px; 
+}
+
+/* Styling for the checkout button */
+.button-container-checkout {
+    padding: 10px 20px;
+    background-color: white;
+    border: solid 1px black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-container-checkout:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
