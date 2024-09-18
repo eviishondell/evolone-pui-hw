@@ -328,3 +328,12 @@ select {
     font-weight: bold;
 }
 
+.highlight-products {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.highlight-cart {
+    background-color: yellow;
+    font-weight: bold;
+}
