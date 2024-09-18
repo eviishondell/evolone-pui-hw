@@ -36,7 +36,8 @@ function populateOptions() {
 }
 
 function glazingChange(element) {
-    selectedGlazingPrice = parseFloat(element.value);
+    // w3 schools - parseFloat
+    selectedGlazingPrice = parseFloat(element.value); 
     updatePrice();  
 }
 
@@ -47,7 +48,7 @@ function packSizeChange(element) {
 
 function updatePrice() {
     const totalPrice = (basePrice + selectedGlazingPrice) * selectedPackMultiplier;
-    totalPriceElement.textContent = totalPrice.toFixed(2);  // Update displayed price
+    totalPriceElement.textContent = totalPrice.toFixed(2);  
 }
 
 populateOptions();

@@ -137,8 +137,10 @@ a:active {
 .flex-container {
     display: flex;
     justify-content: center; 
-    padding: 20px;
-    min-height: 100vh;
+    align-items: flex-start;
+    gap: 20px;
+    /* padding: 20px;
+    min-height: 100vh; */
 }
 
 /* Styling for the image */
@@ -150,16 +152,21 @@ a:active {
 
 /* Container for the details (text and dropdowns) */
 .details-container {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    /* display: flex;
+    flex-direction: column;
     justify-content: flex-start; 
-    max-width: 500px;
+    max-width: 500px; */
 }
 
 /* Styling for the customize text */
 .customize_text h2 {
     font-size: 24px;
     line-height: 1.5;
+    margin-bottom: 100px;
     text-align: left;
     font-weight: normal;
 }
@@ -210,6 +217,7 @@ select {
 
 .checkout-container {
     padding-top: 20px;
+    margin-top: 220px;
 }
 /* Flex container for the entire row */
 .product-container {
@@ -231,7 +239,7 @@ select {
 }
 
 .image-column img {
-    width: 300px; /* Adjust size as needed */
+    width: 300px; 
     height: auto;
     border: 2px solid black;
     margin-bottom: 5px; /* Space between image and remove button */
@@ -337,3 +345,4 @@ select {
     background-color: yellow;
     font-weight: bold;
 }
+
