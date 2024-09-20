@@ -1,11 +1,11 @@
-let glazingOptions = [
+const glazingOptions = [
     { name: "Keep original", priceAdaptation: 0.00 },
     { name: "Sugar milk", priceAdaptation: 0.00 },
     { name: "Vanilla milk", priceAdaptation: 0.50 },
     { name: "Double chocolate", priceAdaptation: 1.50 }
 ];
 
-let packSizeOptions = [
+const packSizeOptions = [
     { size: 1, priceMultiplier: 1 },
     { size: 3, priceMultiplier: 3 },
     { size: 6, priceMultiplier: 5 },
