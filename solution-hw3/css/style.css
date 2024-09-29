@@ -33,12 +33,12 @@
     width: 100%;
 }
 
-.nav-link-container:hover {
+/* .nav-link-container:hover {
     background-color: yellow; 
     color: black; 
     font-weight: bold; 
     text-decoration: none; 
-}
+} */
 .nav-link-container {
     margin-right: 20px;
 }
