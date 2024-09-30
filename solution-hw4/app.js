@@ -36,29 +36,6 @@ function refreshPd() {
     populateOptions();
   }
 }
-
-// Function to show dropdown options for glazing and packing
-// function showDropdown() {
-//     const glazeDropdown = document.getElementById("glazingSelect");
-//     const packDropdown = document.getElementById("packSizeSelect");
-  
-//     glazeDropdown.innerHTML = "";
-//     packDropdown.innerHTML = "";
-  
-//     glazingOptions.forEach((glaze) => {
-//       const option = document.createElement("option");
-//       option.value = glaze.priceAdaptation;
-//       option.textContent = glaze.name;
-//       glazeDropdown.appendChild(option);
-//     });
-  
-//     packSizeOptions.forEach((pack) => {
-//       const option = document.createElement("option");
-//       option.value = pack.priceMultiplier;
-//       option.textContent = `Pack of ${pack.size}`;
-//       packDropdown.appendChild(option);
-//     });
-//   }
   
 function populateOptions() {
     const glazingSelect = document.getElementById('glazingSelect');
