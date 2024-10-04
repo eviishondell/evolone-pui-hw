@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cinnamon Roll Customization</title>
+    <script defer src="app.js"></script>
+    <script defer src="rollsData.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="../assets/logo/logo-01.svg" alt="logo" class="logo" />
+      </a>
+      <div class="nav-content">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">PRODUCTS</a>
+          <div class="highlight-cart">
+            <a href="shopping_cart.html" class="nav-link">CART</a>
+          </div>
+        </div>
+        <div class="underline"></div>
+        <p class="intro">Our hand-made cinnamon rolls</p>
+      </div>
+    </nav>
+
+    <main class="cart-page-container">
+      <template id="cart-template">
+        <div class="product-container">
+          <!-- First Column: Image and Remove Button -->
+          <div class="image-column">
+            <img class="original-image" />
+            <div class="remove">Remove</div>
+          </div>
+
+          <!-- Second Column: Product Details -->
+          <div class="details-column">
+            <p class="product-name"></p>
+            <p class="glazing-type"></p>
+            <p class="pack-size"></p>
+          </div>
+
+          <!-- Third Column: Price -->
+          <div class="price-column">
+            <p class="last-price"></p>
+          </div>
+        </div>
+      </template>
+
+      <div class="total-underline"></div>
+
+      <div class="checkout-wrapper">
+        <div class="total-cost">Total</div>
+        <div class="checkout-cost"></div>
+      </div>
+
+      <div class="button-wrapper">
+        <button class="button-container-checkout">Checkout</button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinnamon Roll Customization</title>
+    <script defer src="app.js"></script>
+    <script defer src="rollsData.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+          <img src="../assets/logo/logo-01.svg" alt="logo" class="logo">
+        </a>
+        <div class="nav-content">
+            <div class="nav-links">
+                <div class="highlight-products">
+                    <a href="index.html" class="nav-link">PRODUCTS </a>
+                </div>
+                    <a href="shopping_cart.html" class="nav-link">CART</a>
+                </div>
+            <div class="underline"></div>
+            <p class="intro">Our hand-made cinnamon rolls</p>
+        </div>
+    </nav>
+    <div class="original-bun-text">
+      <h2>Original Cinnamon Bun</h2>
+    </div>
+
+    <div class="flex-container">
+      <div class="detail-image">
+          <img src="../assets/products/original-cinnamon-roll.jpg" class="original-image" alt="orig">
+      </div>
+
+      <div class="details-container">
+        <div class="customize_text">
+            <h2>Customize our delicious,<br> hand-made cinnamon roll to <br> your liking!</h2>
+        </div>
+          
+        <div class="both-dropdowns">
+            <div class="glaze_dropdown">
+                <label for="glazingSelect">Glazing</label>
+                <select id="glazingSelect" onchange="glazingChange(this)">
+                </select>
+            </div>
+
+            <div class="pack_size_dropdown">
+                <label for="packSizeSelect">Pack Size</label>
+                <select id="packSizeSelect" onchange="packSizeChange(this)">
+                </select>
+            </div>
+        </div>
+
+          <div class="checkout-container">
+              <div class="checkout">
+                  <span id="totalPrice">$2.49</span>
+                  <!-- <a href="shopping_cart.html"> -->
+                      <button class="add-to-cart">Add to Cart</button>
+                  <!-- </a> -->
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+
