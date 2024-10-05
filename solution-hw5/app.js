@@ -16,7 +16,7 @@ let shoppingCart = [];
 let cartButton = [];
 let originalPrice = 0;
 let total = 0;
-// Function to refresh product details
+
 function refreshPd() {
   const rollData = rolls[rollType];
 
@@ -130,9 +130,6 @@ function addToCart() {
 document.addEventListener("DOMContentLoaded", refreshPd);
 
 
-
-
-
 // HW5
 function addNewRoll(rollType,selectedGlazeDescription,selectedPackSize,finalPrice) {
   const newRoll = new Roll(rollType,selectedGlazeDescription,selectedPackSize,finalPrice);
@@ -142,7 +139,7 @@ function addNewRoll(rollType,selectedGlazeDescription,selectedPackSize,finalPric
   return newRoll
 }
 
-// ask
+
 function createElement(newRoll) {
   const template = document.querySelector('#cart-template');
   const clone = template.content.cloneNode(true);
@@ -159,9 +156,8 @@ function createElement(newRoll) {
 
   updateElement(newRoll);
 }
-console.log(total);
+
 function updateElement(newRoll) {
-    // get the HTML elements that need updating
     const rollImageElement = newRoll.element.querySelector('.original-image');
     const rollTypeElement = newRoll.element.querySelector('.product-name');
     const rollGlazeElement = newRoll.element.querySelector('.glazing-type');
@@ -178,10 +174,7 @@ function updateElement(newRoll) {
 }
 
 function deleteRoll(newRoll) {
-
-  // remove the notecard DOM object from the UI
   newRoll.element.remove();
-  // remove the actual Notecard object from our set of notecards
   shoppingCart.pop(newRoll);
   total -= newRoll.basePrice;
   updateElement(newRoll);
