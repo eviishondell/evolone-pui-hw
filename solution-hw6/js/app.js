@@ -9,7 +9,6 @@ class Roll {
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
-// const rollType = params.get("roll");
 const rollType = queryString.split('-').slice(1).join('-'); // Extract everything after 'roll-' //prior cs knowledge
 
 let shoppingCart = [];

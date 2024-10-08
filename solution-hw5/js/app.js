@@ -133,7 +133,6 @@ document.addEventListener("DOMContentLoaded", refreshPd);
 // HW5
 function addNewRoll(rollType,selectedGlazeDescription,selectedPackSize,finalPrice) {
   const newRoll = new Roll(rollType,selectedGlazeDescription,selectedPackSize,finalPrice);
-  console.log(total)
   total += newRoll.basePrice;
   shoppingCart.push(newRoll)
   return newRoll
@@ -187,6 +186,5 @@ const appleRoll = addNewRoll("Apple", "Original", 3, 10.47);
 
 
 for (const newRoll of shoppingCart) {
-  console.log(newRoll);
   createElement(newRoll);
 }
