@@ -9,6 +9,7 @@ class Roll {
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
+// const rollType = params.get("roll");
 const rollType = queryString.split('-').slice(1).join('-'); // Extract everything after 'roll-' //prior cs knowledge
 
 let shoppingCart = [];
@@ -135,6 +136,7 @@ function addNewRoll(rollType,selectedGlazeDescription,selectedPackSize,finalPric
   console.log(total)
   total += newRoll.basePrice;
   shoppingCart.push(newRoll)
+  localStorage.setItem('cart', JSON.stringify(shoppingCart));
   return newRoll
 }
 
@@ -176,6 +178,12 @@ function deleteRoll(newRoll) {
   newRoll.element.remove();
   shoppingCart.pop(newRoll);
   total -= newRoll.basePrice;
+  // Update local storage with the new cart contents
+  localStorage.setItem('cart', JSON.stringify(shoppingCart));
+
+  // Print the current cart in local storage
+  console.log("Current Cart in local storage after removal:", JSON.parse(localStorage.getItem('cart')));
+
   updateElement(newRoll);
 }
 
@@ -184,8 +192,37 @@ const walnutRoll = addNewRoll("Walnut", "Vanilla Milk", 12, 39.90);
 const raisinRoll = addNewRoll("Raisin", "Sugar Milk", 3, 8.97);
 const appleRoll = addNewRoll("Apple", "Original", 3, 10.47);
 
+// Retrieve the cart from local storage
+function loadCartFromLocalStorage() {
+  const savedCart = localStorage.getItem('cart'); // Attempt to retrieve the cart
 
-for (const newRoll of shoppingCart) {
-  console.log(newRoll);
-  createElement(newRoll);
+  if (savedCart) {
+      // If cart data exists, parse it into the shoppingCart array
+      shoppingCart = JSON.parse(savedCart);
+      console.log("Cart loaded from local storage:", shoppingCart);
+  } else {
+      // If no cart data, create an empty cart array
+      shoppingCart = [];
+      console.log("No cart found in local storage. Starting with an empty cart.");
+  }
+
+  // Update total price based on loaded cart items
+  total = shoppingCart.reduce((acc, roll) => acc + roll.basePrice, 0);
+
+  // Populate the cart display with loaded rolls
+  for (const roll of shoppingCart) {
+      createElement(roll);
+  }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadCartFromLocalStorage();
+  refreshPd();  // Ensure product details are updated after page load
+});
+
+// for (const newRoll of shoppingCart) {
+//   console.log(newRoll);
+//   createElement(newRoll);
+// }
+
+// add to cart moves it to local
