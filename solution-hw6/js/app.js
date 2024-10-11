@@ -107,7 +107,7 @@ function addToCart() {
   // Add to shoppingCart instead of cartButton
   shoppingCart.push(newRoll);
   saveCartToLocalStorage();  // Save the updated cart to local storage
-
+  recalculateTotal();
   console.log("Added to cart:", newRoll);
   console.log("Current Cart:", shoppingCart);  // Log shoppingCart, not cartButton
   createElement(newRoll);
@@ -230,24 +230,33 @@ function deleteRoll(newRoll) {
     // Remove the roll from the cart array
     shoppingCart.splice(index, 1);
 
-    // Update the total price
-    total -= newRoll.basePrice;
-
     // Remove the element from the DOM
     newRoll.element.remove();
 
     // Save the updated cart to local storage
     saveCartToLocalStorage();
 
-    // Update the total price display in the DOM
-    const totalPriceElement = document.querySelector('.checkout-cost');
-    totalPriceElement.innerText = "$" + total.toFixed(2);
+    // Recalculate the total price
+    recalculateTotal();
 
     // Print the updated cart to the console
     console.log('Cart after removing item:', shoppingCart);
   } else {
     console.error('Item not found in cart.');
   }
+}
+
+function recalculateTotal() {
+  total = 0;  // Reset total to 0
+
+  // Loop through the shoppingCart array and sum the base prices
+  for (const roll of shoppingCart) {
+    total += roll.basePrice;
+  }
+
+  // Update the total price display in the DOM
+  const totalPriceElement = document.querySelector('.checkout-cost');
+  totalPriceElement.innerText = "$" + total.toFixed(2); // Ensure 2 decimal places
 }
 
 
@@ -271,9 +280,11 @@ function loadCartFromLocalStorage() {
     for (const newRoll of shoppingCart) {
       createElement(newRoll);  // Render each roll on the page
     }
+    recalculateTotal();
   } else {
     console.log("No cart found in local storage.");
   }
+  
 }
 
 
@@ -282,9 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (addToCartButton) {
     addToCartButton.addEventListener('click', addToCart);
     console.log("Add to Cart button found and event listener added");
-  } else {
-    loadCartFromLocalStorage(); console.error("Add to Cart button not found");
-  }
+  } 
 });
 
 document.addEventListener('DOMContentLoaded', function () {
