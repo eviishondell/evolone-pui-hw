@@ -210,12 +210,44 @@ function updateElement(newRoll) {
     totalPriceElement.innerText = "$" + total.toFixed(2); 
 }
 
+// function deleteRoll(newRoll) {
+//   newRoll.element.remove();
+//   shoppingCart.pop(newRoll);
+//   total -= newRoll.basePrice;
+//   updateElement(newRoll);
+//   // saveCartToLocalStorage();
+// }
 function deleteRoll(newRoll) {
-  newRoll.element.remove();
-  shoppingCart.pop(newRoll);
-  total -= newRoll.basePrice;
-  updateElement(newRoll);
-  // saveCartToLocalStorage();
+  // Find the index of the roll to remove from the cart array
+  const index = shoppingCart.findIndex(roll =>
+    roll.type === newRoll.type &&
+    roll.glazing === newRoll.glazing &&
+    roll.size === newRoll.size &&
+    roll.basePrice === newRoll.basePrice
+  );
+
+  if (index !== -1) {
+    // Remove the roll from the cart array
+    shoppingCart.splice(index, 1);
+
+    // Update the total price
+    total -= newRoll.basePrice;
+
+    // Remove the element from the DOM
+    newRoll.element.remove();
+
+    // Save the updated cart to local storage
+    saveCartToLocalStorage();
+
+    // Update the total price display in the DOM
+    const totalPriceElement = document.querySelector('.checkout-cost');
+    totalPriceElement.innerText = "$" + total.toFixed(2);
+
+    // Print the updated cart to the console
+    console.log('Cart after removing item:', shoppingCart);
+  } else {
+    console.error('Item not found in cart.');
+  }
 }
 
 
@@ -251,8 +283,10 @@ document.addEventListener('DOMContentLoaded', function () {
     addToCartButton.addEventListener('click', addToCart);
     console.log("Add to Cart button found and event listener added");
   } else {
-    console.
-    loadCartFromLocalStorage(); error("Add to Cart button not found");
+    loadCartFromLocalStorage(); console.error("Add to Cart button not found");
   }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  loadCartFromLocalStorage();  // Load and render cart items from local storage
+});
