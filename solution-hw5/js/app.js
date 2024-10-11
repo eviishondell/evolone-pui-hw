@@ -129,7 +129,18 @@ function addToCart() {
 // addToCartButton.addEventListener("click", addToCart);
 
 document.addEventListener("DOMContentLoaded", refreshPd);
+document.addEventListener('DOMContentLoaded', function () {
+  const addToCartButton = document.querySelector(".add-to-cart");
 
+  if (addToCartButton) {
+    console.log("Button found:", addToCartButton);
+    addToCartButton.addEventListener("click", function() {
+      console.log("Button clicked!");
+    });
+  } else {
+    console.error("Add to Cart button not found");
+  }
+});
 
 // HW5
 function addNewRoll(rollType, selectedGlazeDescription, selectedPackSize, basePrice) {

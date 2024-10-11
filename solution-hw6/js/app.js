@@ -13,8 +13,10 @@ const params = new URLSearchParams(queryString);
 // const rollType = params.get("roll");
 const rollType = queryString.split('-').slice(1).join('-'); // Extract everything after 'roll-' //prior cs knowledge
 
-let shoppingCart = [];
-let cartButton = [];
+// Initialize shoppingCart by loading from local storage, or as an empty array if none exists
+let shoppingCart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+
+// let cartButton = [];
 let originalPrice = 0;
 let total = 0;
 
@@ -86,47 +88,31 @@ function updatePrice() {
     priceElement.textContent = `$${finalPrice.toFixed(2)}`;
   }
   
-
 // Function to add selected roll to cart
 function addToCart() {
-    const glazeDropdown = document.getElementById("glazingSelect");
-    const packDropdown = document.getElementById("packSizeSelect");
+  const glazeDropdown = document.getElementById("glazingSelect");
+  const packDropdown = document.getElementById("packSizeSelect");
 
-  const selectedGlazeDescription =
-    glazeDropdown.options[glazeDropdown.selectedIndex].text;
-  const selectedPackSize =
-    packDropdown.options[packDropdown.selectedIndex].text;
+  const selectedGlazeDescription = glazeDropdown.options[glazeDropdown.selectedIndex].text;
+  const selectedPackSize = packDropdown.options[packDropdown.selectedIndex].text;
 
-  // Get the price directly from the data attributes
-  const selectedGlazePrice = Number(
-    glazeDropdown.options[glazeDropdown.selectedIndex].dataset.price
-  );
-  const selectedPackIncrease = Number(
-    packDropdown.options[packDropdown.selectedIndex].dataset.increase
-  );
+  const selectedGlazePrice = Number(glazeDropdown.options[glazeDropdown.selectedIndex].dataset.price);
+  const selectedPackIncrease = Number(packDropdown.options[packDropdown.selectedIndex].dataset.increase);
 
-  // Calculate the final price
-  const finalPrice =
-    (originalPrice + selectedGlazePrice) * selectedPackIncrease;
+  const finalPrice = (originalPrice + selectedGlazePrice) * selectedPackIncrease;
 
   // Create a new instance of Roll
-  const newRoll = new Roll(
-    rollType,
-    selectedGlazeDescription,
-    selectedPackSize,
-    finalPrice
-  );
+  const newRoll = new Roll(rollType, selectedGlazeDescription, selectedPackSize, finalPrice);
 
-  // Add to cart
-  cartButton.push(newRoll);
+  // Add to shoppingCart instead of cartButton
+  shoppingCart.push(newRoll);
+  saveCartToLocalStorage();  // Save the updated cart to local storage
 
   console.log("Added to cart:", newRoll);
-  console.log("Current Cart:", cartButton);
+  console.log("Current Cart:", shoppingCart);  // Log shoppingCart, not cartButton
+  createElement(newRoll);
 }
 
-// Add event listener to the "Add to Cart" button with the class
-// const addToCartButton = document.querySelector(".add-to-cart");
-// addToCartButton.addEventListener("click", addToCart);
 
 document.addEventListener("DOMContentLoaded", refreshPd);
 
@@ -168,23 +154,45 @@ function addNewRoll(rollType, selectedGlazeDescription, selectedPackSize, basePr
   return newRoll; // Return the created roll object
 }
 
-
 function createElement(newRoll) {
   const template = document.querySelector('#cart-template');
+  
+  if (!template) {
+    console.error("Template not found!");
+    return;
+  } else {
+    console.log("Template found:", template);  // Add this line
+  }
+
   const clone = template.content.cloneNode(true);
   newRoll.element = clone.querySelector('.product-container');
 
+  if (!newRoll.element) {
+    console.error("Element not found in cloned template!");
+    return;
+  }
+
   const btnDelete = newRoll.element.querySelector('.remove');
-  console.log(btnDelete);
-  btnDelete.addEventListener('click', () => {
-    deleteRoll(newRoll);
-  });
+  if (!btnDelete) {
+    console.error("Remove button not found in cloned element!");
+  } else {
+    btnDelete.addEventListener('click', () => {
+      deleteRoll(newRoll);
+    });
+  }
 
   const rollListElement = document.querySelector('.cart-page-container');
-  rollListElement.prepend(newRoll.element);
+  if (rollListElement) {
+    rollListElement.prepend(newRoll.element);  // Insert the cloned element into the DOM
+  } else {
+    console.error("Cart page container not found!");
+  }
 
   updateElement(newRoll);
 }
+
+
+
 
 function updateElement(newRoll) {
     const rollImageElement = newRoll.element.querySelector('.original-image');
@@ -207,18 +215,44 @@ function deleteRoll(newRoll) {
   shoppingCart.pop(newRoll);
   total -= newRoll.basePrice;
   updateElement(newRoll);
+  // saveCartToLocalStorage();
 }
 
-// const originalRoll = addNewRoll("Original", "Sugar Milk", 1, 2.49)
-// const walnutRoll = addNewRoll("Walnut", "Vanilla Milk", 12, 39.90);
-// const raisinRoll = addNewRoll("Raisin", "Sugar Milk", 3, 8.97);
-// const appleRoll = addNewRoll("Apple", "Original", 3, 10.47);
 
-const originalRoll = addNewRoll("Original", "Sugar Milk", 1, 2.49)
-const walnutRoll = addNewRoll("Walnut", "Vanilla Milk", 12, 3.49);
-const raisinRoll = addNewRoll("Raisin", "Sugar Milk", 3, 2.99);
-const appleRoll = addNewRoll("Apple", "Original", 3, 3.49);
+function saveCartToLocalStorage() {
+  const cartJSON = JSON.stringify(shoppingCart);
+  localStorage.setItem('shoppingCart', cartJSON);
+  console.log('Cart saved to local storage:', cartJSON);
 
-for (const newRoll of shoppingCart) {
-  createElement(newRoll);
+    // Now print the current contents of the cart from local storage
+    const savedCart = localStorage.getItem('shoppingCart');
+    console.log('Current cart contents in local storage:', JSON.parse(savedCart));
 }
+
+function loadCartFromLocalStorage() {
+  const cartJSON = localStorage.getItem('shoppingCart');
+  if (cartJSON) {
+    shoppingCart = JSON.parse(cartJSON);
+    console.log('Loaded cart from local storage:', shoppingCart);
+
+    // Repopulate the cart with the items from storage
+    for (const newRoll of shoppingCart) {
+      createElement(newRoll);  // Render each roll on the page
+    }
+  } else {
+    console.log("No cart found in local storage.");
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const addToCartButton = document.querySelector('.add-to-cart');
+  if (addToCartButton) {
+    addToCartButton.addEventListener('click', addToCart);
+    console.log("Add to Cart button found and event listener added");
+  } else {
+    console.
+    loadCartFromLocalStorage(); error("Add to Cart button not found");
+  }
+});
+
