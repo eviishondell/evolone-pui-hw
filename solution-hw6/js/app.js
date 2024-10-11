@@ -5,6 +5,7 @@ class Roll {
     this.size = packSize;
     this.basePrice = basePrice;
   }
+
 }
 
 const queryString = window.location.search;
@@ -131,13 +132,40 @@ document.addEventListener("DOMContentLoaded", refreshPd);
 
 
 // HW5
-function addNewRoll(rollType,selectedGlazeDescription,selectedPackSize,finalPrice) {
-  const newRoll = new Roll(rollType,selectedGlazeDescription,selectedPackSize,finalPrice);
-  console.log(total)
-  total += newRoll.basePrice;
-  shoppingCart.push(newRoll)
-  localStorage.setItem('cart', JSON.stringify(shoppingCart));
-  return newRoll
+function addNewRoll(rollType, selectedGlazeDescription, selectedPackSize, basePrice) {
+  let glazePrice = 0; // Initialize glazePrice to a default value
+  
+  // Calculate glaze price based on selected glaze description
+  if (selectedGlazeDescription === "Original" || selectedGlazeDescription === "Sugar Milk") {
+    glazePrice = 0; // No additional cost for Original or Sugar milk
+  } else if (selectedGlazeDescription === "Vanilla Milk") {
+    glazePrice = 0.5; // Additional cost for Vanilla milk
+  } else if (selectedGlazeDescription === "Double chocolate") {
+    glazePrice = 1.5; // Additional cost for Double chocolate
+  } else {
+    console.error(`Unexpected glaze description: ${selectedGlazeDescription}`);
+  }
+  
+  const adjustedBasePrice = basePrice + glazePrice; // Add glaze price to base price
+
+  let finalPrice;
+  // Calculate final price based on selected pack size
+  if (selectedPackSize === 1 || selectedPackSize === 3) {
+    finalPrice = adjustedBasePrice * selectedPackSize;
+  } else if (selectedPackSize === 6) {
+    finalPrice = adjustedBasePrice * (selectedPackSize - 1);
+  } else if (selectedPackSize === 12) {
+    finalPrice = adjustedBasePrice * (selectedPackSize - 2);
+  } else {
+    console.error(`Unexpected pack size: ${selectedPackSize}`);
+    finalPrice = 0; 
+  }
+
+  // Create a new Roll instance
+  const newRoll = new Roll(rollType, selectedGlazeDescription, selectedPackSize, finalPrice);
+  total += finalPrice; // Add the finalPrice directly to total
+  shoppingCart.push(newRoll); // Push the new roll into the cart
+  return newRoll; // Return the created roll object
 }
 
 
@@ -178,51 +206,19 @@ function deleteRoll(newRoll) {
   newRoll.element.remove();
   shoppingCart.pop(newRoll);
   total -= newRoll.basePrice;
-  // Update local storage with the new cart contents
-  localStorage.setItem('cart', JSON.stringify(shoppingCart));
-
-  // Print the current cart in local storage
-  console.log("Current Cart in local storage after removal:", JSON.parse(localStorage.getItem('cart')));
-
   updateElement(newRoll);
 }
 
+// const originalRoll = addNewRoll("Original", "Sugar Milk", 1, 2.49)
+// const walnutRoll = addNewRoll("Walnut", "Vanilla Milk", 12, 39.90);
+// const raisinRoll = addNewRoll("Raisin", "Sugar Milk", 3, 8.97);
+// const appleRoll = addNewRoll("Apple", "Original", 3, 10.47);
+
 const originalRoll = addNewRoll("Original", "Sugar Milk", 1, 2.49)
-const walnutRoll = addNewRoll("Walnut", "Vanilla Milk", 12, 39.90);
-const raisinRoll = addNewRoll("Raisin", "Sugar Milk", 3, 8.97);
-const appleRoll = addNewRoll("Apple", "Original", 3, 10.47);
+const walnutRoll = addNewRoll("Walnut", "Vanilla Milk", 12, 3.49);
+const raisinRoll = addNewRoll("Raisin", "Sugar Milk", 3, 2.99);
+const appleRoll = addNewRoll("Apple", "Original", 3, 3.49);
 
-// Retrieve the cart from local storage
-function loadCartFromLocalStorage() {
-  const savedCart = localStorage.getItem('cart'); // Attempt to retrieve the cart
-
-  if (savedCart) {
-      // If cart data exists, parse it into the shoppingCart array
-      shoppingCart = JSON.parse(savedCart);
-      console.log("Cart loaded from local storage:", shoppingCart);
-  } else {
-      // If no cart data, create an empty cart array
-      shoppingCart = [];
-      console.log("No cart found in local storage. Starting with an empty cart.");
-  }
-
-  // Update total price based on loaded cart items
-  total = shoppingCart.reduce((acc, roll) => acc + roll.basePrice, 0);
-
-  // Populate the cart display with loaded rolls
-  for (const roll of shoppingCart) {
-      createElement(roll);
-  }
+for (const newRoll of shoppingCart) {
+  createElement(newRoll);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  loadCartFromLocalStorage();
-  refreshPd();  // Ensure product details are updated after page load
-});
-
-// for (const newRoll of shoppingCart) {
-//   console.log(newRoll);
-//   createElement(newRoll);
-// }
-
-// add to cart moves it to local

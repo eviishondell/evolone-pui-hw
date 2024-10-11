@@ -146,7 +146,7 @@ function addNewRoll(rollType, selectedGlazeDescription, selectedPackSize, basePr
     console.error(`Unexpected glaze description: ${selectedGlazeDescription}`);
   }
   
-  const adjustedBasePrice = basePrice + glazePrice; 
+  const adjustedBasePrice = basePrice + glazePrice; // Add glaze price to base price
 
   let finalPrice;
   // Calculate final price based on selected pack size
