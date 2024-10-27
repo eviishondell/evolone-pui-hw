@@ -168,7 +168,7 @@ How would you use Generative AI responsibly?
 
 ### _Idea 1_
 
-![Portfolio](final-project/images/portfolio-sketch.png)
+![Portfolio](../final-project/images/portfolio-sketch.png)
 
 **What is the basic idea of your final project?**  
 I plan a portfolio to make myself competitive for design roles.
@@ -184,7 +184,7 @@ I want to showcase my projects and skills. I basically want an interactive resum
 
 ### _Idea 2_
 
-![Planet Tech](final-project/images/planettech-sketch.png)
+![Planet Tech](../final-project/images/planettech-sketch.png)
 
 **What is the basic idea of your final project?**  
 I want to introduce users to other fields in tech outside of software engineering.
@@ -200,7 +200,7 @@ I want to display the different fields and resume tips to increase the likelines
 
 ### _Idea 3_
 
-![Movie Suggestion Generator](final-project/images/moviegen-sketch.png)
+![Movie Suggestion Generator](../final-project/images/moviegen-sketch.png)
 
 **What is the basic idea of your final project?**  
 I want to help users pick a movie to watch when they can't decide.
