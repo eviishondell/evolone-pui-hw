@@ -216,28 +216,22 @@ I want users to learn about movies they would've never considered before taking 
 
 ## Feedback Summary
 
-Summarize all the critiques you received during the lab session (\~300 words).
+In my recent portfolio lab session, I received valuable feedback on enhancing the user experience and visual design across multiple sections. Starting with the Home Page, it was recommended that I incorporate more microinteractions to make the experience feel dynamic and responsive. These subtle animations can guide user actions and create a more engaging first impression. Additionally, shifting towards illustrative storytelling and using fewer words could help communicate my narrative more effectively and capture users’ attention quickly.
 
-- Home Page
-  - More microinteractions
-  - Illustrative storytelling
-  - Less Words
-- Resume Page
-  - Find ways to focus the eyes
-  - Use something other than logos? Maybe team icons
-  - Download pdf button
-- Projects
-  - How can we make this interactive?
-  - How can I effectively engage users when interacting with my prototypes?
-  - How to get around NDA violation? Password Protection?
-- Accomplishments
-  - Change the layout: rectangle or squares for grid alignment
+On the Resume Page, feedback focused on improving visual hierarchy to better direct the viewer’s eye. This could involve experimenting with typography, spacing, or color contrasts that guide users naturally from one section to another. Instead of traditional company logos, using team icons or simplified visuals could create a clean, cohesive look while still conveying my experience. Adding a “Download PDF” button was also suggested to provide easy access for users who want to view my resume offline.
+
+For the Projects section, suggestions included making the page more interactive, encouraging users to engage with my work actively. This could mean implementing hover effects, interactive elements, or embedded prototype previews that offer a hands-on experience. Additionally, I was encouraged to find ways to maintain user interest, such as adding tooltips or brief descriptions to explain each project’s context and unique challenges. To address potential NDA restrictions, it may be wise to consider password-protected sections to securely display work without violating confidentiality agreements.
+
+Finally, for the Accomplishments section, I received advice to rethink the layout to improve alignment and readability. Using a grid with rectangles or squares could provide a structured, visually appealing format that’s easier for users to scan and absorb information quickly. By implementing these changes, I can create a portfolio that feels polished, interactive, and tailored to my audience’s experience.
 
 ## Feedback Digestion
 
-Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
+In my recent portfolio lab, I received feedback focused on enhancing interactivity, visual storytelling, usability, and layout. A key suggestion was to incorporate more microinteractions on the Home Page to make the experience feel lively and guide users naturally through the content. This subtle interactivity can significantly improve user engagement, so I plan to add these in my next design. For instance, I might use animations when hovering over elements or smooth transitions between sections, as these details can elevate the overall user experience without overwhelming the page.
 
-- More microinteractions
-- Illustrative storytelling
-- Download pdf button
-- Change layout for accomplishment page
+The idea of implementing illustrative storytelling was another valuable critique. This would involve visually conveying my narrative rather than relying heavily on text. I see the potential of incorporating illustrations to highlight specific project insights and personal experiences, making my portfolio more memorable and approachable. Since reducing text aligns with this approach, I’ll work to replace some descriptive content with visuals that communicate effectively on their own.
+
+Adding a “Download PDF” button on the Resume Page was also recommended, to give users easy access to my resume in a downloadable format. This feature enhances convenience for viewers, especially recruiters who might want to save my resume directly. Given its practical value, I’ll prioritize this addition in my upcoming design update.
+
+Finally, feedback on the Accomplishments page layout suggested switching to a grid of rectangles or squares for better alignment and readability. While I see the merit in a structured grid, I’d like to explore hybrid layouts first to balance visual appeal with functionality. I’ll test a few formats and gather feedback to ensure the design remains easy to navigate.
+
+In summary, I’ll prioritize microinteractions, illustrative storytelling, and the PDF download button, as these adjustments should enhance usability and overall presentation. I’ll approach the layout revision thoughtfully to maintain both structure and creativity.
