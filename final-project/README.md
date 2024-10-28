@@ -168,42 +168,51 @@ How would you use Generative AI responsibly?
 
 ### _Idea 1_
 
-![Portfolio](final-project/images/portfolio-sketch.png)
+![Portfolio](../final-project/images/portfolio-sketch.png)
 
-- What is the basic idea of your final project?
-  I plan a portfolio to make myself competitive for design roles.
-- How do you plan to make your design interactive and engaging?  
-  I plan to add microinteractions to show that buttons are clickable. Potentially adding live demos would be a stretch goal.
-- How do you plan to make your design accessible?  
-  I plan to add alt text to make sure the user knows what they are interacting with. I can also attempt to add live demos of my projects.
-- What information do you specifically want to convey and include on your website?
-  I want to showcase my projects and skills. I basically want an interactive resume.
+**What is the basic idea of your final project?**  
+I plan a portfolio to make myself competitive for design roles.
+
+**How do you plan to make your design interactive and engaging?**  
+I plan to add microinteractions to show that buttons are clickable. Potentially adding live demos would be a stretch goal.
+
+**How do you plan to make your design accessible?**  
+I plan to add alt text to make sure the user knows what they are interacting with. I can also attempt to add live demos of my projects.
+
+**What information do you specifically want to convey and include on your website?**  
+I want to showcase my projects and skills. I basically want an interactive resume.
 
 ### _Idea 2_
 
-![Planet Tech](final-project/images/planettech-sketch.png)
+![Planet Tech](../final-project/images/planettech-sketch.png)
 
-- What is the basic idea of your final project?
-  I want to introduce users to other fields in tech outside of software engineering.
-- How do you plan to make your design interactive and engaging?  
-  I want them to take a quiz that can match them to the field they can look into.
-- How do you plan to make your design accessible?  
-  Since a lot will be going on, adding focus indicators will help the user to complete tasks without getting distracted.
-- What information do you specifically want to convey and include on your website?
-  I want to display the different fields and resume tips to increase the likeliness of getting properly placed in the tech field.
+**What is the basic idea of your final project?**  
+I want to introduce users to other fields in tech outside of software engineering.
+
+**How do you plan to make your design interactive and engaging?**  
+I want them to take a quiz that can match them to the field they can look into.
+
+**How do you plan to make your design accessible?**  
+Since a lot will be going on, adding focus indicators will help the user to complete tasks without getting distracted.
+
+**What information do you specifically want to convey and include on your website?**  
+I want to display the different fields and resume tips to increase the likeliness of getting properly placed in the tech field.
 
 ### _Idea 3_
 
-![Movie Suggestion Generator](final-project/images/moviegen-sketch.png)
+![Movie Suggestion Generator](../final-project/images/moviegen-sketch.png)
 
-- What is the basic idea of your final project?
-  I want to help users pick a movie to watch when they can't decide.
-- How do you plan to make your design interactive and engaging?  
-  I plan to have the users answer a series of questions that will lead to an accurate movie suggestion based on API parameters.
-- How do you plan to make your design accessible?  
-  Using semantic elements and adding alt-text will help make the design more accessible. Also, adding highly contrasting colors will make the text legible.
-- What information do you specifically want to convey and include on your website?
-  I want users to learn about movies they would've never considered before taking the quiz on the website.
+**What is the basic idea of your final project?**  
+I want to help users pick a movie to watch when they can't decide.
+
+**How do you plan to make your design interactive and engaging?**  
+I plan to have the users answer a series of questions that will lead to an accurate movie suggestion based on API parameters.
+
+**How do you plan to make your design accessible?**  
+Using semantic elements and adding alt-text will help make the design more accessible. Also, adding highly contrasting colors will make the text legible.
+
+**What information do you specifically want to convey and include on your website?**  
+I want users to learn about movies they would've never considered before taking the quiz on the website.
 
 ## Feedback Summary
 
