@@ -209,6 +209,26 @@ How would you use Generative AI responsibly?
 
 Summarize all the critiques you received during the lab session (\~300 words).
 
+- Home Page
+  - More microinteractions
+  - Illustrative storytelling
+  - Less Words
+- Resume Page
+  - Find ways to focus the eyes
+  - Use something other than logos? Maybe team icons
+  - Download pdf button
+- Projects
+  - How can we make this interactive?
+  - How can I effectively engage users when interacting with my prototypes?
+  - How to get around NDA violation? Password Protection?
+- Accomplishments
+  - Change the layout: rectangle or squares for grid alignment
+
 ## Feedback Digestion
 
 Digest the feedback you got in the lab (\~300 words). Indicate which critique you will act on in your next design and why you chose to incorporate/dismiss pieces of critique.
+
+- More microinteractions
+- Illustrative storytelling
+- Download pdf button
+- Change layout for accomplishment page
