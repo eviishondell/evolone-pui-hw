@@ -224,6 +224,18 @@ For the Projects section, suggestions included making the page more interactive,
 
 Finally, for the Accomplishments section, I received advice to rethink the layout to improve alignment and readability. Using a grid with rectangles or squares could provide a structured, visually appealing format that’s easier for users to scan and absorb information quickly. By implementing these changes, I can create a portfolio that feels polished, interactive, and tailored to my audience’s experience.
 
+___
+
+
+For the website prototype focused on tech fields and resume help, I received some insightful feedback on the Resume Page. Some users felt that the checklist format for resume tips made the experience feel rigid and passive. They suggested transforming it into a more interactive experience, possibly by guiding users through personalized steps, such as tips tailored to different resume sections or interactive prompts that encourage users to add their own inputs along the way. Additionally, many noted that the background stars should be animated, creating a dynamic effect to immerse users and visually represent the “journey” of career building. This subtle, moving backdrop could add depth to the page, helping users feel more engaged as they explore the content. Overall, these recommendations focus on making the Resume Page both interactive and visually captivating to enhance the learning experience.
+
+___
+
+
+For the movie suggestions site that prompts users with questions to recommend films, I received valuable feedback regarding both the visual design and overall user experience. A key critique was to change the color theme from orange to something more inviting and warm, as users felt the current palette was a bit harsh and not conducive to a relaxed browsing experience. Suggestions included using softer colors or a more vibrant combination that evokes a sense of fun and excitement.
+
+Additionally, users noted that the site felt somewhat plain and could benefit from more engaging elements. They recommended exploring ways to make the interface more interactive and enjoyable, such as incorporating playful animations, dynamic transitions, or even thematic visuals that relate to the movies being suggested. Enhancing the overall aesthetics and interactivity of the site will not only make it more visually appealing but also create a more enjoyable experience for users as they navigate through movie recommendations. By implementing these changes, I aim to foster a more inviting atmosphere that encourages users to explore and discover new films.
+
 ## Feedback Digestion
 
 In my recent portfolio lab, I received feedback focused on enhancing interactivity, visual storytelling, usability, and layout. A key suggestion was to incorporate more microinteractions on the Home Page to make the experience feel lively and guide users naturally through the content. This subtle interactivity can significantly improve user engagement, so I plan to add these in my next design. For instance, I might use animations when hovering over elements or smooth transitions between sections, as these details can elevate the overall user experience without overwhelming the page.
@@ -235,3 +247,11 @@ Adding a “Download PDF” button on the Resume Page was also recommended, to g
 Finally, feedback on the Accomplishments page layout suggested switching to a grid of rectangles or squares for better alignment and readability. While I see the merit in a structured grid, I’d like to explore hybrid layouts first to balance visual appeal with functionality. I’ll test a few formats and gather feedback to ensure the design remains easy to navigate.
 
 In summary, I’ll prioritize microinteractions, illustrative storytelling, and the PDF download button, as these adjustments should enhance usability and overall presentation. I’ll approach the layout revision thoughtfully to maintain both structure and creativity.
+
+---
+
+For the website prototype focused on tech fields and resume help, the feedback highlighted the need for a more interactive and engaging Resume Page. Users expressed that the current checklist format felt too rigid, suggesting a shift towards a more dynamic experience. Implementing personalized steps for resume building, such as tailored tips for different sections, could enhance user engagement and encourage active participation. Additionally, incorporating interactive elements—like prompts for users to input their own information—would create a more hands-on learning experience. Another suggestion was to animate the background stars, which could add visual interest and create an immersive atmosphere, making the content more engaging for users. These changes aim to transform the Resume Page into a lively, user-centric space that fosters deeper interaction and learning.
+
+---
+
+For the movie suggestions site, users recommended changing the color theme from orange to a more inviting and warm palette to create a more relaxed browsing experience. A softer color scheme could help evoke a sense of fun and excitement, making the site feel more welcoming. Additionally, feedback pointed out that the site appeared plain and could benefit from more engaging design elements. Suggestions included incorporating playful animations, dynamic transitions, and thematic visuals that relate to the movies being suggested. By implementing these changes, the goal is to enhance the visual appeal and overall user experience, encouraging users to explore and enjoy discovering new films in a more inviting environment.
