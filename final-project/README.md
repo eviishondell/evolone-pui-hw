@@ -133,17 +133,26 @@ This portfolio will also be critical for future internships and full-time roles,
 
 ### *Prototype 1*
 
-![portfolio hi-fi](images/hifi-portfolio.png)
+![portfolio hi-fi](images/hifi-portfolio-home.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+Users found the design more engaging due to the clear separation of sections, allowing them to see my goals and objectives upfront. They also appreciated having all navigation bar options visible for easier access.
 
 ### *Prototype 2*
+![portfolio hi-fi](images/hifi-portfolio-projects.png)
 
-…
+Users appreciated the clear images showcasing my work, which made them more inclined to click. They also liked the featured project being highlighted, making it more noticeable and likely to be clicked—especially if it’s my favorite.
 
 ## Usability Test
 
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+In response to the feedback I received during my portfolio evaluation, I made several key changes to enhance user experience and the clarity of my work. Users noted that the portfolio needed a strong call-to-action on the home page, as it was not immediately clear how to access my projects. They suggested adding a “View My Project” button to guide users directly to my work. To address this, I added a prominent “View My Project” button on the landing page, giving visitors a straightforward entry point to explore my projects.
+
+Users also highlighted issues with text contrast, particularly where it was overlayed on images, which made the content difficult to read. To resolve this, I applied a gradient overlay to these images. This simple adjustment significantly improved text legibility and the visual appeal of the portfolio, ensuring that users could easily engage with the content.
+
+Additionally, users pointed out that the navigation bar was missing an “About Me” section, leaving out a personal introduction to my work and background. I added this section to the navigation bar to provide quick access to my profile, allowing users to gain context about my skills and objectives without needing to search through the site.
+
+Feedback also emphasized that the featured project lacked sufficient detail to communicate my specific role and contributions, which reduced its effectiveness in highlighting my skills. To address this, I revised the featured project section to include more descriptive content, showcasing the specific tasks I completed and the impact of my work. This update gave users a clearer understanding of my abilities and made the portfolio more engaging and informative overall.
+
+These enhancements collectively addressed the feedback and elevated the overall structure, usability, and presentation of my portfolio.
 
 ## Updated Designs
 
