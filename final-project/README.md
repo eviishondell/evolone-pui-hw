@@ -156,7 +156,8 @@ These enhancements collectively addressed the feedback and elevated the overall 
 
 ## Updated Designs
 
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+![Portfolio](../final-project/images/hifi-revise.png)
+
 
 ## Feedback Summary
 
