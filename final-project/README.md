@@ -158,17 +158,20 @@ These enhancements collectively addressed the feedback and elevated the overall 
 
 ![Portfolio](../final-project/images/hifi-revise.png)
 
-
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+In our recent lab session, I received valuable feedback that guided several design refinements for my project. The initial feedback highlighted that maintaining a consistent color scheme across all pages would enhance the user experience by creating a more cohesive look. Based on this suggestion, I updated the project page to incorporate the blue theme from the home page. This decision helped unify the design aesthetic and create a visual connection between pages, making navigation feel more intuitive.
+
+Another area of improvement was the organization of projects. Previously, projects were categorized as either open access or password-protected. However, feedback suggested that organizing them by topic, such as "Wearables" or "Research," would be more user-friendly and align better with how users might approach the content. Implementing this categorization provides visitors with a clearer understanding of each project’s focus area, improving accessibility and engagement. Additionally, I decided to allow users to click into each project page, regardless of access permissions. If a project is password-protected, users will encounter a prompt to enter the password to view restricted content. This approach was inspired by feedback indicating that users might still want to explore project previews before committing to access requirements.
+
+Lastly, I was advised to make the resume page more dynamic and engaging. To address this, I chose to make the resume interactive by enlarging text when it is active on the timeline and decreasing it when it is not. This subtle interaction improves readability and draws attention to relevant sections, making the experience more engaging. The feedback encouraged these enhancements, leading to a design that feels more polished and user-centered.
 
 ## Milestones
 
-Complete Home Page (Landing Page) layout and functionality.
-Build Projects Page and clickable project previews.
-Finalize Resume Page and additional testing for all pages.
-Final testing, bug fixes, performance optimization, and documentation.
+- Complete Home Page (Landing Page) layout and functionality.
+- Build Projects Page and clickable project previews.
+- Finalize Resume Page and additional testing for all pages.
+- Final testing, bug fixes, performance optimization, and documentation.
 
 ### *Implementation Plan*
 
