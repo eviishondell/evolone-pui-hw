@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required Glide.js Core JS -->
-    <script src="js/app.js"></script>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <script defer src="js/app.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
   </head>
   <body>
-    <!-- creating the nav bar -->
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">Evolone Layne</div>
       <ul class="nav-links">
@@ -19,19 +18,80 @@
       </ul>
     </nav>
 
-    <div class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-slide">
-          <img src="images/image1.jpg" alt="Slide 1" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/image2.jpg" alt="Slide 2" />
-        </div>
-        <div class="carousel-slide">
-          <img src="images/image3.avif" alt="Slide 3" />
+    <main>
+      <div
+        class="slider"
+        style="--width: 100px; --height: 50px; --quantity: 3"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="images/image1.jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="images/image2.jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="images/image3.avif" alt="" />
+          </div>
+          <!-- <div class="item" style="--position: 4">
+            <img src="images/image1.png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="images/image2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="images/image3.avif" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="images/image1.png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="images/image2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="images/image3.avif" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="images/image1.jpg" alt="" />
+          </div> -->
         </div>
       </div>
-      <!-- <div class="carousel-text">Your Carousel Text Here</div> -->
-    </div>
+
+      <!-- <div
+        class="slider"
+        reverse="true"
+        style="--width: 200px; --height: 200px; --quantity: 9"
+      > -->
+        <!-- <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="images/slider2_1.png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="images/slider2_2.png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="images/slider2_3.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="images/slider2_4.png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="images/slider2_5.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="images/slider2_6.png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="images/slider2_7.png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="images/slider2_8.png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="images/slider2_9.png" alt="" />
+          </div>
+        </div> -->
+      </div>
+    </main>
   </body>
 </html>
