@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    transition: font-weight 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus,
+  .nav-links a:active {
+    font-weight: bold;
+  }
+  
+  /* Carousel styles */
+  .carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    animation: slide 20s infinite linear;
+    height: 100%;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 auto; /* Ensures each image takes only as much width as needed */
+    margin-right: 30px; /* Adds space between each slide */
+  }
+  
+  .carousel-slide img {
+    height: 90vh;
+    width: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* Remove margin for last slide to avoid extra space at the end */
+  .carousel-slide:last-child {
+    margin-right: 0;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%); /* Adjust as needed for the number of images */
+    }
+  }
+  
+  
