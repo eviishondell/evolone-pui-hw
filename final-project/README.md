@@ -156,15 +156,22 @@ These enhancements collectively addressed the feedback and elevated the overall 
 
 ## Updated Designs
 
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+![Portfolio](../final-project/images/hifi-revise.png)
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+In our recent lab session, I received valuable feedback that guided several design refinements for my project. The initial feedback highlighted that maintaining a consistent color scheme across all pages would enhance the user experience by creating a more cohesive look. Based on this suggestion, I updated the project page to incorporate the blue theme from the home page. This decision helped unify the design aesthetic and create a visual connection between pages, making navigation feel more intuitive.
+
+Another area of improvement was the organization of projects. Previously, projects were categorized as either open access or password-protected. However, feedback suggested that organizing them by topic, such as "Wearables" or "Research," would be more user-friendly and align better with how users might approach the content. Implementing this categorization provides visitors with a clearer understanding of each project’s focus area, improving accessibility and engagement. Additionally, I decided to allow users to click into each project page, regardless of access permissions. If a project is password-protected, users will encounter a prompt to enter the password to view restricted content. This approach was inspired by feedback indicating that users might still want to explore project previews before committing to access requirements.
+
+Lastly, I was advised to make the resume page more dynamic and engaging. To address this, I chose to make the resume interactive by enlarging text when it is active on the timeline and decreasing it when it is not. This subtle interaction improves readability and draws attention to relevant sections, making the experience more engaging. The feedback encouraged these enhancements, leading to a design that feels more polished and user-centered.
 
 ## Milestones
 
-Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
+- Complete Home Page (Landing Page) layout and functionality.
+- Build Projects Page and clickable project previews.
+- Finalize Resume Page and additional testing for all pages.
+- Final testing, bug fixes, performance optimization, and documentation.
 
 ### *Implementation Plan*
 
@@ -175,37 +182,57 @@ Outline weekly milestones to plan your expected implementation progress until th
 - [ ] Week 10 Nov 4 \- Nov 8:   
   - [ ] FP2 due
 
-- [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
+- [ ] Week 11 Nov 11 \- Nov 15:
+  - [ ] **Hero Section**: Finalize carousel of images and hero text animation
+  - [ ] Implement button or link directing users to the Projects page, styled for easy visibility.
+  - [ ] **About Me Section**: Add content and finalize layout, ensuring a personal touch and readable design.
+  - [ ] **Testing**: Conduct initial testing for responsiveness and interactivity of hero carousel and animations.
+     
+- [ ] Week 12 Nov 18 \- Nov 22:
+  - [ ] **Featured Project Button**: Highlight a main project with a clickable area that links to detailed view.
+  - [ ] **Additional Projects**: List other projects with preview details and hover effects for engagement.
+  - [ ] **Project Details View**: When a project is clicked, show expanded view with descriptions, technologies used, and images.
+  - [ ] **UI/UX Testing**: Ensure smooth transitions between project previews and detailed views.
+         
 - [ ] Week 13 Nov 25 \- Nov 29:  
-
-  - [ ] Thanksgiving  
+  - [ ] **Thanksgiving**: Use available time to address any outstanding issues or bugs.
+    - [ ] **Resume Page**: Design layout for an embedded or downloadable resume, including quick links to social media or contact.
+    - [ ] **Consistency Check**: Ensure consistent styling, fonts, and color scheme across all pages.
+         
 - [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] FP4 due 
+  - [ ] **FP4 due**
+  - [ ] **Final Usability and Compatibility Testing**: Test across devices and browsers, ensuring smooth navigation, responsive design, and bug-free functionality.
+  - [ ] **Performance Optimization**: Ensure fast load times for images in the carousel and project pages, optimizing any code as needed.
+  - [ ] **Documentation and Final Review**: Document code, layout decisions, and features. Prepare for presentation with all files organized. 
 
 ### *Libraries and Other Components*
 
-List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+**Framer Motion** - To add subtle animations and transitions, making the interface more engaging without overwhelming the user.
 
+**React Router** - For smooth and dynamic navigation between the “About Me,” “Projects,” and “Resume” sections without reloading the page.
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+Generative AI will play an integral role in enhancing the efficiency and creativity of my implementation. I plan to use AI tools to assist in writing code snippets, generating design ideas, and troubleshooting issues during development. For instance, while building the React components, AI can suggest optimized patterns and assist with responsive design best practices, making it easier to create a cohesive and visually appealing layout. Additionally, I can use AI to experiment with different design layouts by generating suggestions based on best practices for user interface design, which will help me iterate quickly and choose the most effective design.
+
+Generative AI will also support content generation. I intend to use it to draft descriptions for my projects, ensuring that the language is concise yet impactful, and to write placeholder text that I can refine later. This will save time and keep me focused on the functionality and aesthetic of the site. However, I will be mindful to personalize these AI-generated content drafts to ensure they authentically represent my voice and experience.
+
+Finally, I will leverage AI to check code for accessibility standards, ensuring that my design meets the requirements for color contrast, screen reader compatibility, and keyboard navigation. This approach will help me create an inclusive experience without sacrificing efficiency.
 
 ### *Tool Use*
 
- What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
+- **ChatGPT**  
+  - *I will use it for*: Generating code snippets, drafting initial project descriptions, and solving syntax or logic issues. ChatGPT can provide quick explanations or walkthroughs for complex concepts, saving time on research.
+  - *I will not use it for*: Highly specific design decisions that require my personal input and creativity, as well as tasks that involve handling sensitive user data or backend security, since those require careful, manual oversight to avoid risks.
 
-* ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
-* GitHub Copilot  
-* ...
+- **GitHub Copilot**  
+  - *I will use it for*: Suggesting code as I type, which can speed up development by providing inline recommendations based on context. It’s especially helpful for repetitive tasks, such as creating components with similar structures or boilerplate code.
+  - *I will not use it for*: Finalizing complex functions or algorithms without review. Copilot’s suggestions are useful but may not always align with best practices for performance or readability.
+  
 
 ### *Responsible Use*
 
-How would you use Generative AI responsibly? 
+To ensure responsible use of Generative AI, I will be vigilant about verifying the AI-generated content and code. I understand that AI outputs should be treated as suggestions rather than final solutions. Therefore, I will review all code for correctness, efficiency, and security to ensure that it aligns with industry standards. Additionally, I will ensure that any AI-generated content is personalized to reflect my unique perspective and experiences. I will also remain mindful of potential biases in AI-generated designs and make adjustments to maintain inclusivity. Lastly, I will avoid relying on AI for sensitive or privacy-related tasks, focusing on using it as a complementary tool rather than a substitute for careful, thoughtful development.
 
 ---
 # **FP1 \- Proposal for Critique**
