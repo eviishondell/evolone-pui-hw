@@ -2,53 +2,53 @@ body {
     background-color: black;
     font-family: sans-serif;
     margin: 0;
-    overflow: hidden;
-  }
-  
-  /* Navbar styles */
-  .navbar {
+}
+
+    /* Navbar styles */
+    .navbar {
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-  }
-  
-  .logo {
+    }
+
+    .logo {
     color: white;
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  .nav-links {
+    }
+
+    .nav-links {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-links li {
+    }
+
+    .nav-links li {
     margin-left: 20px;
-  }
-  
-  .nav-links a {
+    }
+
+    .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: normal;
     font-size: 18px;
     transition: font-weight 0.3s ease;
-  }
-  
-  .nav-links a:hover,
-  .nav-links a:focus,
-  .nav-links a:active {
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus,
+    .nav-links a:active {
     font-weight: bold;
-  }
-  main{
-    /* width: min(1200px, 98vw); */
+    }
+
+    main {
     margin: auto;
-}
-.slider{
+    }
+
+    .slider{
     width: 100vw;
     height: var(--height);
     overflow: hidden;
@@ -59,46 +59,255 @@ body {
         #000 10% 90%,
         transparent
     ); */
-}
-.slider .list{
+    }
+
+    .slider .list{
     display: flex;
     width: calc(var(--width));
     min-width: calc(var(--width) * 2.1);
     position: relative;
-}
-.slider .list .item{
+    }
+
+    .slider .list .item{
     width: var(--width);
     height: var(--height);
     position: absolute;
     left: 110%;
     animation: autoRun 10s linear infinite;
-    /* transition: filter 0.5s; */
     animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
     overflow: hidden;
-}
-.slider .list .item img{
+    }
+
+    .slider .list .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.25) 67%);
+    }
 
-}
-@keyframes autoRun{
+    @keyframes autoRun{
     from{
         left: 100%;
     }to{
         left: calc(var(--width) * -1);
     }
-}
+    }
 
-.slider[reverse="true"] .item{
+    .slider[reverse="true"] .item{
     animation: reversePlay 10s linear infinite;
-}
-@keyframes reversePlay{
+    }
+    @keyframes reversePlay{
     from{
         left: calc(var(--width) * -1);
     }to{
         left: 100%;
     }
+    }
+
+    .hero-text {
+        position: absolute;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 30px; /* Adjust font size as needed */
+        font-weight: bold;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 5px;
+        max-width: 90%; /* Prevent overflow */
+    }
+    
+    /* project container */
+    .horizontal-rectangle {
+        width: 100%;
+        height: 350px; /* Adjust height as needed */
+        background-color: rgba(20, 70, 81, 0.8); /* RGBA color with 0.8 opacity */
+        margin-top: 20px; /* Optional spacing from the slider */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%; /* Adjust width based on how much space you want between the buttons */
+        gap: 40px; /* Spacing between the buttons */
+    }
+    
+    .square-button {
+        width: 300px;  /* Square button size */
+        height: 300px; /* Square button size */
+        background-color: #143B68; /* Button color */
+        color: white; /* Text color */
+        border: none;
+        border-radius: 10px; /* Optional, rounded corners */
+        cursor: pointer;
+        font-size: 14px; /* Button text size */
+        transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
+    
+    .square-button:hover {
+        background-color: #021934; /* Button hover color */
+    }
+
+    /* About Me section */
+
+    .about-me-header {
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+/* About Me container styles */
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(20, 70, 81, 0.15);
+    border-radius: 8px;
 }
+
+/* Image styles */
+.about-me-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-left: -80px;
+    border-radius: 10px;
+}
+
+/* Role container styles */
+.role-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.static-text {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.dynamic-role {
+    font-size: 24px;
+    color: #FF2E00;
+    font-weight: bold;
+    min-height: 30px; /* Maintains space as text changes */
+    margin-left: 10px;
+}
+
+/* About Me paragraph */
+.about-me-text p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    flex-shrink: 0;
+    width: 300px;
+    /* height: 139px; */
+}
+
+.footer {
+    background-color: #151212; /* Dark background for footer */
+    color: white; /* White text color */
+    padding: 20px;
+    /* margin-top: 50px; Optional: Space between the rest of the page and footer */
+  }
+  
+  .footer-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between text and logos */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .footer-text {
+    flex: 1; /* Makes the text section take up available space */
+  }
+  
+  .social-links {
+    display: flex; /* Align the social links in a row */
+    gap: 15px; /* Add space between icons */
+  }
+  
+  .social-links a {
+    color: white; /* Make the icons white */
+    font-size: 30px; /* Adjust the size of the icons */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .social-links a:hover {
+    color: #46CDEB; /* Change color on hover */
+  }
+  
+  .footer-gradient {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient( rgba(55, 178, 206, 0.40) 0%, #004999 55%);
+    -webkit-background-clip: text; 
+    color: transparent; /* Make the text color transparent */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .social-links {
+      margin-top: 10px; /* Add space above social icons */
+    }
+  }
+
+  
+
+/* .footer-gradient {
+    width: 269px;
+height: 36px;
+flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(55, 178, 206, 0.40) 0%, #004999 55%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+padding-left: 20px;
+}
+
+.about-me-text {
+    padding-left: 80px;
+}
+
+.footer-text {
+    padding-left: 20px;
+    width: 1048px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.linkedin-icon {
+    font-size: 40px; /* Set size of the icon */
+    /* color: #0A66C2; /* Icon color */
+    /* transition: transform 0.3s ease, color 0.3s ease; */
+/* } */
+
+/* .github-icon {
+    font-size: 40px; /* Set size of the icon */
+    /* color: #983BCE; Icon color */
+    /* transition: transform 0.3s ease, color 0.3s ease; */
+/* } */ 
+
+/* .social-icon:hover { */
+    /* transform: scale(1.1); Slight zoom effect */
+    /* color: #0077b5; LinkedIn blue or GitHub color */
+/* } */
