@@ -16,11 +16,11 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="logo">Evolone Layne</div>
+      <a href="index.html" class="logo">Evolone Layne</a>
       <ul class="nav-links">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about-me-header">About Me</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
     <!-- Carousel -->
@@ -55,13 +55,22 @@
 
     <div class="horizontal-rectangle">
       <div class="buttons-container">
-        <button class="square-button">Button 1</button>
-        <button class="square-button">Button 2</button>
-        <button class="square-button">Button 3</button>
+        <button class="square-button">
+          <img src="images/watch-preview.png" alt="Image 1" />
+          <div class="overlay">Watch Project</div>
+        </button>
+        <button class="square-button">
+          <img src="images/pmdd-preview.png" alt="Image 2" />
+          <div class="overlay">PMDD Project</div>
+        </button>
+        <button class="square-button">
+          <img src="images/siri-preview.png" alt="Image 3" />
+          <div class="overlay">Siri Project</div>
+        </button>
       </div>
     </div>
 
-    <h2 class="about-me-header">About Me</h2>
+    <h2 id="about-me-header">About Me</h2>
 
     <div class="about-me-container">
       <img
