@@ -378,3 +378,30 @@ body {
     font-size: 30px;
     font-weight: bold;
   }
+
+  .export-pdf {
+    background-color: #46CDEB; /* Blue color */
+    color: black; /* White text */
+    font-size: 16px; /* Font size */
+    padding: 12px 24px; /* Padding for better button size */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .export-pdf:hover {
+    background-color: #3AA9D4; /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  .export-pdf:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  #resume-section {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-bottom: 50px;
+  }
