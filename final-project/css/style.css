@@ -316,6 +316,7 @@ body {
 
 /* Grid for Rounded Squares */
 .square-grid {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -700,4 +701,21 @@ cursor: pointer;
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* Parent Container for Half Image */
+.half-image-container {
+  width: 100%; /* Set to the width of the parent */
+  height: 80%; /* Display only the top half of the image */
+  overflow: hidden; /* Hide the bottom half of the image */
+  position: relative; /* Ensure proper clipping */
+}
+
+/* Image Styling */
+.half-image-container img {
+  width: 100%; /* Make sure the image fits the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image scales appropriately */
+  position: absolute;
+  top: 0; /* Align the image to the top */
 }
