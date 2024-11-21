@@ -44,10 +44,12 @@ body {
   font-weight: bold;
 }
 
-main {
+/* main {
   margin: auto;
-}
-
+} */
+/* main {
+  flex: 1; /* Makes the content expand and push the footer to the bottom */
+  /* margin: auto; */ 
 .slider {
   width: 100vw;
   height: var(--height);
@@ -73,9 +75,9 @@ main {
   height: var(--height);
   position: absolute;
   left: 110%;
-  animation: autoRun 10s linear infinite;
+  animation: autoRun 20s linear infinite;
   animation-delay: calc(
-    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+    (20s / var(--quantity)) * (var(--position) - 1) - 20s
   ) !important;
   overflow: hidden;
 }
@@ -102,7 +104,7 @@ main {
 }
 
 .slider[reverse="true"] .item {
-  animation: reversePlay 10s linear infinite;
+  animation: reversePlay 0s linear infinite;
 }
 @keyframes reversePlay {
   from {
@@ -267,7 +269,7 @@ main {
 .square-button img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 10px;
 }
@@ -306,7 +308,7 @@ main {
 
 /* Top Rounded Rectangle */
 .rounded-rectangle {
-  width: 80%;
+  width: 100%;
   height: 500px;
   background: linear-gradient(180deg, rgba(70, 205, 235, 0.50) 0%, rgba(38, 111, 206, 0.50) 100%);
   border-radius: 20px;
@@ -317,7 +319,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 80%;
+  width: 90%;
 }
 
 /* Individual Rounded Square */
@@ -457,10 +459,245 @@ cursor: pointer;
 }
 
 .project-name {
-  padding-top: 20px;
+  padding-top:10px ;
   font-size: 16px; /* Adjust font size as needed */
   color: white; /* Text color */
   text-align: center; /* Center the text */
   margin-top: 10px; /* Space between the image and text */
   font-weight: bold; /* Make the project name stand out */
+}
+
+.project-content {
+  position: static; /* Default value */
+  left: auto; /* Reset */
+  transform: none; /* Reset */
+  margin: 0 auto; /* Center horizontally if needed */
+  max-width: 1200px; /* Optional: to control the width */
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(
+    to bottom,
+    #005687,
+    #143b68
+  ); /* Gradient from blue to dark blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-content p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Mockup Section */
+.mockup-section {
+  background: black;
+  /* background: #f4f4f4; */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mockup-container {
+  animation: slideIn 1.2s ease-in-out;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* .mockup-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #e0e0e0, #c6c6c6);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+} */
+.mockup-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure the image scales with the container */
+  max-width: 700px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 12px; /* Add rounded corners for a polished look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin-top: 20px; /* Space between the image and caption */
+}
+
+.mockup-caption {
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Project Details */
+.project-details {
+  padding: 40px 20px;
+  background-color: #6694ca;
+  color: white;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-details h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.project-details p,
+.project-details ul {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.project-details ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Split Layout for Team and Tools */
+.split-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.split {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Project Info Section */
+.project-info {
+  animation: fadeIn 1s ease-in-out;
+  padding: 50px 20px;
+  /* background-color: white; */
+  background: black;
+  color: white;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+/* Section Headings */
+.project-info h2 {
+  font-size: 28px;
+  color: #6694ca;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Text Content */
+.project-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px; /* Add spacing between sections */
+}
+
+/* Split Layout for Team and Tools */
+.split-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Info Block */
+.info-block {
+  flex: 1;
+  min-width: 300px;
+
+  text-align: center; /* Center align for Apple-like aesthetics */
+}
+
+.info-block h3 {
+  font-size: 20px;
+  /* color: #000; */
+  color: #6694ca;
+  margin-bottom: 10px;
+}
+
+.info-block ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  color: white;
+
+}
+/* .info-block li { 
+  color: white;
+
+} */
+.info-block li {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Subtle Divider Between Sections */
+.info-section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dfe3e8; /* Light divider for Apple style */
+  padding-bottom: 30px;
+}
+
+.info-section,
+.split-info {
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.5s; /* Stagger effect for smooth storytelling */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .split-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-block {
+    margin-bottom: 20px;
+  }
+}
+
+/* Animation: Fade-in Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation: Slide-in Effect */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

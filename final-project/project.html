@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <!-- Include Font Awesome CDN -->
+    <title>Projects</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/app.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -23,74 +20,100 @@
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
-
-    <div class="container">
-      <!-- Top Rounded Rectangle -->
+    <div class="project-content">
+      <!-- PMDD Section -->
       <div class="rounded-rectangle">
-        <div class="content-container">
+        <div class="content-container centered">
           <img
             src="images/pmdd-preview.png"
-            alt="Mental Health Visualization"
+            alt="PMDD Visualization"
             class="left-image"
           />
-          <div class="text-content">
-            Globally, <span class="bold-text">31 million women and girls</span> are affected by this issue.
+          <div class="text-content centered">
+            <p>
+              PMDD affects around
+              <span class="bold-text">31 million women and girls globally</span
+              >.
             </p>
             <p>
               Effectively visualizing mental health data to diagnose users with
               premenstrual dysphoric disorder.
             </p>
-            <button class="learn-btn">Learn More</button>
-            <!-- <a href="#" class="learn-btn">Learn More</a> -->
+            <a href="pmdd-project.html">
+              <button class="learn-btn">Learn More</button>
+            </a>
           </div>
         </div>
       </div>
 
-<!-- Grid with 4 Rounded Squares -->
-<div class="square-grid">
-  <div class="rounded-square">
-    <img src="images/watch-preview.png" alt="Image 1" class="square-image" />
-    <div class="project-name">Prototyping a Color Picker</div>
-  </div>
-  <div class="rounded-square">
-    <img src="images/siri-preview.png" alt="Image 2" class="square-image" />
-    <div class="project-name">Siri Face 2.0</div>
-  </div>
-  <div class="rounded-square">
-    <!-- <img src="images/bike.jpg" alt="Image 3" class="square-image" />
-    <div class="project-name">Designing Semi-Autonomous Vehicles</div> -->
-  </div>
-  <div class="rounded-square">
-    <!-- <img src="images/hands.jpg" alt="Image 4" class="square-image" />
-    <div class="project-name">Gen X Connections</div> -->
-  </div>
-</div>
+      <!-- Wearables Section -->
+      <section>
+        <h2 id="about-me-header" class="centered">Wearables</h2>
+        <div class="square-grid centered">
+          <a href="color-picker.html" class="rounded-square">
+            <img
+              src="images/watch-preview.png"
+              alt="Color Picker"
+              class="square-image"
+            />
+            <div class="project-name">
+              Prototyping a Color Picker for watchOS
+            </div>
+          </a>
+          <a href="siri-face.html" class="rounded-square">
+            <img src="images/siri-preview.png" alt="Siri Face 2.0" />
+            <div class="project-name">Siri Face 2.0</div>
+          </a>
+        </div>
+      </section>
 
-</div>
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-text">
-      <h2 class="footer-gradient">Nice to See You!</h2>
-      <p class="footer-text">elayne297@gmail.com</p>
-      <p class="footer-text">
-        This website is best viewed on desktop © Evolone Layne 2024. All
-        rights reserved.
-      </p>
+      <!-- Class Projects Section -->
+      <section>
+        <h2 id="about-me-header" class="centered">Class Projects</h2>
+        <div class="square-grid centered">
+          <a href="gen-x-connections.html" class="rounded-square">
+            <img
+              src="images/hands-preview.png"
+              alt="Gen X Connections"
+              class="square-image"
+            />
+            <div class="project-name">Gen X Connections</div>
+          </a>
+          <a href="semi-autonomous-vehicles.html" class="rounded-square">
+            <img
+              src="images/bike-preview.png"
+              alt="Designing Semi-Autonomous Vehicles"
+              class="square-image"
+            />
+            <div class="project-name">Designing Semi-Autonomous Vehicles</div>
+          </a>
+        </div>
+      </section>
     </div>
-    <div class="social-links">
-      <a href="https://github.com/eviishondell" target="_blank">
-        <i class="fab fa-github github-icon"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/evolone-layne-ev-uh-lon-604aa6191/"
-        target="_blank"
-      >
-        <i class="fab fa-linkedin linkedin-icon"></i>
-      </a>
-    </div>
-  </div>
-</footer>
 
-
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- <div class="footer-content centered"> -->
+      <div class="footer-text centered">
+        <h2 class="footer-gradient">Nice to See You!</h2>
+        <p class="footer-text">elayne297@gmail.com</p>
+        <p class="footer-text">
+          This website is best viewed on desktop © Evolone Layne 2024. All
+          rights reserved.
+        </p>
+        <!-- </div> -->
+        <div class="social-links">
+          <a href="https://github.com/eviishondell" target="_blank">
+            <i class="fab fa-github github-icon"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/evolone-layne-ev-uh-lon-604aa6191/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin linkedin-icon"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

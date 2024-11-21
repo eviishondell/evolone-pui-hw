@@ -3,105 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PMDD Projection</title>
-    <!-- Custom CSS and JS -->
+    <title>PMDD Project</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/app.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="index.html" class="logo">Evolone Layne</a>
-        <ul class="nav-links">
-          <li><a href="#about-me-header">About Me</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Evolone Layne</a>
+      <ul class="nav-links">
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="hero-content">
+        <h1>PMDD Visualization Project</h1>
+        <p>
+          Empowering women worldwide by making PMDD data actionable and
+          accessible through interactive visualization.
+        </p>
+      </div>
     </header>
 
-    <main>
-      <section class="project-overview">
-        <h1>Project Title</h1>
-        <p class="short-description">
-          A brief description of the project highlighting its purpose.
+    <!-- Mockup Section -->
+    <section class="mockup-section">
+      <div class="mockup-container">
+        <img
+          src="images/pmdd-ss.png"
+          alt="PMDD Visualization Mockup"
+          class="mockup-image"
+        />
+        <p class="mockup-caption">
+          A sneak peek into our visualization interface designed to assist in
+          PMDD self-diagnosis.
         </p>
-        <ul class="project-details">
-          <li><strong>Role:</strong> UI/UX Designer</li>
-          <li><strong>Duration:</strong> January 2024 - March 2024</li>
-          <li><strong>Tools:</strong> Figma, React.js, CSS</li>
-        </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="problem-statement">
-        <h2>Problem Statement</h2>
+    <section class="project-info">
+      <!-- Section 1: What is PMDD -->
+      <div class="info-section">
+        <h2>What is PMDD?</h2>
         <p>
-          Describe the challenge or issue the project aims to address and its
-          importance to the target audience.
+          Premenstrual Dysphoric Disorder (PMDD) is a severe form of
+          premenstrual syndrome (PMS) that significantly impacts mental health.
+          It affects around <strong>31 million women globally</strong>, leading
+          to mood swings, depression, and other emotional and physical symptoms.
         </p>
-      </section>
+      </div>
 
-      <section class="goals">
-        <h2>Goals</h2>
-        <ul>
-          <li>Goal 1: Improve user engagement through better navigation.</li>
-          <li>Goal 2: Increase efficiency of task completion by 20%.</li>
-        </ul>
-      </section>
-
-      <section class="process">
-        <h2>Process</h2>
-        <div class="process-step">
-          <h3>1. Research</h3>
-          <p>
-            Details about user interviews, surveys, or competitor analysis
-            conducted.
-          </p>
-        </div>
-        <div class="process-step">
-          <h3>2. Ideation</h3>
-          <p>Explain brainstorming, wireframing, or sketching activities.</p>
-        </div>
-        <div class="process-step">
-          <h3>3. Prototyping and Design</h3>
-          <p>
-            Details on creating low- and high-fidelity prototypes. Include
-            images:
-          </p>
-          <img src="prototype.png" alt="High-fidelity prototype of the app" />
-        </div>
-        <div class="process-step">
-          <h3>4. Development</h3>
-          <p>Explain the coding and implementation process.</p>
-        </div>
-        <div class="process-step">
-          <h3>5. Testing and Iteration</h3>
-          <p>Details about testing, feedback, and refining the solution.</p>
-        </div>
-      </section>
-
-      <section class="results">
-        <h2>Results</h2>
+      <!-- Section 2: Project Aim -->
+      <div class="info-section">
+        <h2>Project Aim</h2>
         <p>
-          Share the outcomes and impact of your work. Mention metrics or user
-          feedback if available.
+          This project aims to assist users in self-diagnosing PMDD through
+          interactive data visualization. By logging moods and symptoms over
+          time, the system detects patterns in mood swings, anxiety,
+          irritability, and other premenstrual symptoms. If these patterns match
+          PMDD criteria across multiple cycles, users are alerted about a
+          potential diagnosis. This promotes early awareness and self-care.
         </p>
-      </section>
+      </div>
 
-      <section class="learnings">
-        <h2>Learnings and Reflections</h2>
-        <p>
-          Discuss key takeaways and how this project influenced your growth.
-        </p>
-      </section>
+      <!-- Section 3: Team and Tools -->
+      <div class="split-info">
+        <div class="info-block">
+          <h3>Team</h3>
+          <ul>
+            <li>Health Sensing Experience Team</li>
+            <li>Human Interface</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Duration</h3>
+          <p>4 Months</p>
+          <h3>Languages & Tools</h3>
+          <ul>
+            <li>Swift</li>
+            <li>SwiftUI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <section class="cta">
-        <a href="live-demo-link" class="btn">View Live Demo</a>
-        <a href="github-link" class="btn">View Code on GitHub</a>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" id="contact-section">
       <div class="footer-content">
         <div class="footer-text">
           <h2 class="footer-gradient">Nice to See You!</h2>
