@@ -488,6 +488,17 @@ cursor: pointer;
   padding: 80px 20px;
 }
 
+.hero-section-dev {
+  background: linear-gradient(
+    to bottom,
+    #ff4500,
+    #8b0000
+  ); /* Gradient from blue to dark blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
 .hero-section .hero-content h1 {
   font-size: 48px;
   font-weight: bold;
@@ -499,6 +510,11 @@ cursor: pointer;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.8;
+}
+
+/* Target the specific page's section */
+.smaller-mockup .mockup-image {
+  max-width: 400px; /* Make the image smaller for this page */
 }
 
 /* Mockup Section */
@@ -515,18 +531,6 @@ cursor: pointer;
   margin: 0 auto;
 }
 
-/* .mockup-placeholder {
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(135deg, #e0e0e0, #c6c6c6);
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #666;
-} */
 .mockup-image {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%; /* Ensure the image scales with the container */
@@ -536,6 +540,13 @@ cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
   margin-top: 20px; /* Space between the image and caption */
 }
+
+/* Target all h2 and h3 headers within the .project-info-red section */
+.project-info.project-info-red h2,
+.project-info.project-info-red h3 {
+  color: red !important; /* Use !important if there are higher-priority rules overriding this */
+}
+
 
 .mockup-caption {
   font-size: 16px;
@@ -679,6 +690,23 @@ cursor: pointer;
   }
 }
 
+/* Image Row Styling */
+.image-row {
+  display: flex;
+  justify-content: space-between; /* Space evenly between images */
+  align-items: center; /* Align images vertically */
+  gap: 20px; /* Optional: Add spacing between images */
+  margin-top: 20px; /* Add space above the image row */
+}
+
+.info-image {
+  width: 100px; /* Adjust the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+
 /* Animation: Fade-in Effect */
 @keyframes fadeIn {
   0% {
@@ -703,19 +731,98 @@ cursor: pointer;
   }
 }
 
-/* Parent Container for Half Image */
-.half-image-container {
-  width: 100%; /* Set to the width of the parent */
-  height: 80%; /* Display only the top half of the image */
-  overflow: hidden; /* Hide the bottom half of the image */
-  position: relative; /* Ensure proper clipping */
+
+
+
+/* Style the horizontal line under the quotes section */
+.quote-divider {
+  margin: 20px auto;
+  width: 90%; /* Adjust the width relative to container */
+  height: 2px;
+  background: #fff; /* Ensure contrast on black background */
 }
 
-/* Image Styling */
-.half-image-container img {
-  width: 100%; /* Make sure the image fits the container's width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure the image scales appropriately */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: black;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  top: 0; /* Align the image to the top */
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom,
+    #ff4500,
+    #8b0000
+  );
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+.hero-section-siri {
+  background: linear-gradient(
+    to bottom,
+    #197ed7, /* Light Blue */
+    #029aa2, /* Cyan */
+    #764dd7, /* Light Purple */
+    #ff7a7e  /* Pink */
+  ); /* Gradient inspired by Siri's color scheme */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
 }
