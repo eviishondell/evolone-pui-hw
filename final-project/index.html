@@ -31,13 +31,13 @@
       >
         <div class="list">
           <div class="item" style="--position: 1">
-            <img src="images/image1.jpg" alt="" />
+            <img src="images/image1.jpg" alt="Man describing robot" />
           </div>
           <div class="item" style="--position: 2">
-            <img src="images/image2.jpg" alt="" />
+            <img src="images/image2.jpg" alt="Code Vortex" />
           </div>
           <div class="item" style="--position: 3">
-            <img src="images/image3.avif" alt="" />
+            <img src="images/image3.avif" alt="Man wearing VR headset" />
           </div>
         </div>
         <!-- Hero Text Quote -->
@@ -55,18 +55,19 @@
 
     <div class="horizontal-rectangle">
       <div class="buttons-container">
-        <button class="square-button">
-          <img src="images/watch-preview.png" alt="Image 1" />
+        <button class="square-button" aria-label="View Watch Project">
+          <img src="images/watch-preview.png" alt="Preview of Watch Project" />
           <div class="overlay">Watch Project</div>
         </button>
-        <button class="square-button">
+
+        <button class="square-button" aria-label="View PMDD Project">
           <a href="pmdd-project.html">
             <img src="images/pmdd-preview.png" alt="PMDD Project Preview" />
           </a>
           <div class="overlay">PMDD Project</div>
         </button>
-        <button class="square-button">
-          <img src="images/siri-preview.png" alt="Image 3" />
+        <button class="square-button" aria-label="View Siri Face 2.0 Project">
+          <img src="images/siri-preview.png" alt="Siri Face 2.0 Preview" />
           <div class="overlay">Siri Project</div>
         </button>
       </div>
@@ -77,14 +78,14 @@
     <div class="about-me-container">
       <img
         src="images/profile.png"
-        alt="Your Profile Picture"
+        alt="Profile Picture"
         class="about-me-image"
       />
 
       <div class="about-me-text">
         <div class="role-container">
           <span class="static-text">I am a</span>
-          <span class="dynamic-role"></span>
+          <span class="dynamic-role" aria-live="polite">Student</span>
         </div>
         <!-- Dynamic role placeholder -->
         <p>
@@ -111,12 +112,17 @@
           </p>
         </div>
         <div class="social-links">
-          <a href="https://github.com/eviishondell" target="_blank">
+          <a
+            href="https://github.com/eviishondell"
+            target="_blank"
+            aria-label="Visit GitHub profile"
+          >
             <i class="fab fa-github github-icon"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/evolone-layne-ev-uh-lon-604aa6191/"
             target="_blank"
+            aria-label="Visit LinkedIn profile"
           >
             <i class="fab fa-linkedin linkedin-icon"></i>
           </a>

@@ -499,6 +499,45 @@ cursor: pointer;
   text-align: center;
   padding: 80px 20px;
 }
+.hero-section-phonebooth{
+  background: linear-gradient(
+    to bottom,
+    #ffc400,
+    #8b2a00
+  ); /* Gradient from blue to dark blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero-section-color {
+  background: linear-gradient(
+    to right,
+    #ff4500,
+    #ff9900,
+    #ffea00,
+    #00d084,
+    #0091ea,
+    #673ab7,
+    #ff4081
+  ); /* Vibrant gradient */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero-section-color .hero-content h1{
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+.hero-section-color .hero-content p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: black;
+  line-height: 1.8;
+}
+
 
 .hero-section .hero-content h1 {
   font-size: 48px;
@@ -547,10 +586,17 @@ cursor: pointer;
 .project-info.project-info-red h3 {
   color: red ; 
 }
-/* .project-info .info-section h2{
-  color:#764dd7
-} */
 
+.project-info.project-info-pink h2,
+.project-info.project-info-pink h3 {
+  color: rgb(255, 122, 126); ; 
+}
+
+
+.project-info.project-info-orange h2,
+.project-info.project-info-orange h3 {
+  color: rgb(243, 101, 6) ; 
+}
 .mockup-caption {
   font-size: 16px;
   color: #333;
@@ -700,6 +746,7 @@ cursor: pointer;
   align-items: center; /* Align images vertically */
   gap: 20px; /* Optional: Add spacing between images */
   margin-top: 20px; /* Add space above the image row */
+  padding-top: 20px;
 }
 
 .info-image {
@@ -836,7 +883,14 @@ q {font-style: italic;}
 }
 
 
-
+q {
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-style: italic; /* Retain the italic style for quotes */
+  color: #ffffff; /* Ensure the text color stands out */
+  display: block; /* Makes the quote span the full width */
+  text-align: center; /* Centers the quote */
+  margin: 20px 0; /* Adds spacing above and below */
+}
 
 
 
@@ -991,4 +1045,7 @@ body {
   .right {
     left: 0%;
   }
+}
+.prev:focus, .next:focus, .dot:focus {
+  outline: 2px solid #46cdeb;
 }

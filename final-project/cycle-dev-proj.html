@@ -52,15 +52,6 @@
       <!-- Section 1: What is a deviation -->
       <div class="info-section">
         <h2>What is a Cycle Deviation?</h2>
-        <p>
-          Currently, the cycle deviations page lacks visual content, making it
-          challenging for users to fully understand key concepts. This summer,
-          my goal was to enhance the page by adding contextualized information
-          to the prolonged, irregular, spotting, and infrequent deviation
-          sections. These improvements aim to empower users with clearer
-          insights, enabling them to engage in more meaningful and productive
-          conversations with their doctors.
-        </p>
         <div class="image-row">
           <img src="images/prolonged.png" alt="Image 1" class="info-image" />
           <img src="images/spotting.png" alt="Image 2" class="info-image" />
@@ -73,42 +64,47 @@
       <div class="info-section">
         <h2>Project Aim</h2>
         <p>
-          This project aims to assist users in self-diagnosing PMDD through
-          interactive data visualization. By logging moods and symptoms over
-          time, the system detects patterns in mood swings, anxiety,
-          irritability, and other premenstrual symptoms. If these patterns match
-          PMDD criteria across multiple cycles, users are alerted about a
-          potential diagnosis. This promotes early awareness and self-care.
+          Currently, the cycle deviations page lacks visual content, making it
+          challenging for users to fully understand key concepts. This summer,
+          my goal was to enhance the page by adding contextualized information
+          to the prolonged, irregular, spotting, and infrequent deviation
+          sections. These improvements aim to empower users with clearer
+          insights, enabling them to engage in more meaningful and productive
+          conversations with their doctors.
         </p>
       </div>
 
       <div class="slideshow-container">
         <!-- Full-width slides/quotes -->
-        <div class="mySlides">
+        <div class="mySlides" aria-live="polite">
           <q
-            >“Thank you for making a product that empowers women to drive
-            meaningful medical conversations.”</q
+            >Thank you for making a product that empowers women to drive
+            meaningful medical conversations.</q
           >
         </div>
 
         <div class="mySlides">
           <q
-            >“Data is meaningful. I want other women to feel as empowered as I
-            have felt - to use the right words, convey facts and be heard.”</q
+            >Data is meaningful. I want other women to feel as empowered as I
+            have felt - to use the right words, convey facts and be heard.</q
           >
         </div>
 
         <div class="mySlides">
           <q
-            >“Without my Apple Watch, there is every chance I would have lost my
+            >Without my Apple Watch, there is every chance I would have lost my
             right ovary, and with that the opportunity to one day have kids of
-            my own.”</q
+            my own.</q
           >
         </div>
 
         <!-- Next/prev buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)" aria-label="Previous quote"
+          >&#10094;</a
+        >
+        <a class="next" onclick="plusSlides(1)" aria-label="Next quote"
+          >&#10095;</a
+        >
       </div>
 
       <!-- Dots/bullets/indicators -->
@@ -150,9 +146,14 @@
           </p>
         </div>
         <div class="social-links">
-          <a href="https://github.com/eviishondell" target="_blank">
+          <a
+            href="https://github.com/eviishondell"
+            target="_blank"
+            aria-label="Visit GitHub profile"
+          >
             <i class="fab fa-github github-icon"></i>
           </a>
+
           <a
             href="https://www.linkedin.com/in/evolone-layne-ev-uh-lon-604aa6191/"
             target="_blank"
