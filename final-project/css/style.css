@@ -942,7 +942,7 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: #007bff; /* Bright blue for the boxes */
+  background-color: black; /* Bright blue for the boxes */
   color: white; /* White text for contrast */
   position: relative;
   border-radius: 6px;
@@ -953,10 +953,10 @@ body {
 
 
 
-.content:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.02); /* Slightly enlarge */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+.content:hover ul {
+  color: #007bff; /* Bright blue for the list items */
+  transition: color 0.3s ease; /* Smooth transition */
+  font-weight: bold;
 }
 
 
