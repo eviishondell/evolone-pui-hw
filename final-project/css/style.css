@@ -195,7 +195,7 @@ body {
 
 .dynamic-role {
   font-size: 24px;
-  color: #ff2e00;
+  color: #0008ff;
   font-weight: bold;
   min-height: 30px; /* Maintains space as text changes */
   margin-left: 10px;
@@ -856,10 +856,7 @@ cursor: pointer;
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
+
 
 /* Add an italic font style to all quotes */
 q {font-style: italic;}
@@ -1049,3 +1046,19 @@ body {
 .prev:focus, .next:focus, .dot:focus {
   outline: 2px solid #46cdeb;
 }
+.nav-links a {
+  color: white; /* Keep default color */
+  text-decoration: none; /* Remove underline */
+  font-weight: normal; /* Default font-weight */
+  padding: 0; /* Remove any extra padding */
+}
+
+.nav-links a.active {
+  font-weight: bold; /* Make active link bold */
+  color: #fff; /* Ensure the text color is visible */
+}
+
+.nav-links a:focus {
+  outline: none; /* Remove focus outline box */
+}
+
