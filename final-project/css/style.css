@@ -855,9 +855,6 @@ cursor: pointer;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-
-
 /* Add an italic font style to all quotes */
 q {font-style: italic;}
 
@@ -1007,7 +1004,6 @@ body {
 .content:hover ul {
   color: #007bff; /* Bright blue for the list items */
   transition: color 0.3s ease; /* Smooth transition */
-  font-weight: bold;
 }
 
 
