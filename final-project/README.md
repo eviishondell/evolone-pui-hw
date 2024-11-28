@@ -188,6 +188,17 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 
 ### Appendix
 
+**Home Page**
+
+**Project Page**
+**Color Picker**
+**Cycle Deviation**
+**Phonebooth**
+**Siri Face**
+**PMDD Page**
+**Resume Page**
+
+
 
 
 # **FP3 \- Final Project Check-in**
