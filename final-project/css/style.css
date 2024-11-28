@@ -133,7 +133,7 @@ body {
 .horizontal-rectangle {
   width: 100%;
   height: 350px; /* Adjust height as needed */
-  background-color: rgba(20, 70, 81, 0.8); /* RGBA color with 0.8 opacity */
+  background-color: black; /* RGBA color with 0.8 opacity */
   margin-top: 20px; /* Optional spacing from the slider */
   display: flex;
   justify-content: center;
