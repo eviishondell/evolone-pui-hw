@@ -186,6 +186,9 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 
 ---
 
+### Appendix
+
+
 
 # **FP3 \- Final Project Check-in**
 
