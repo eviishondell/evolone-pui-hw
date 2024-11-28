@@ -1058,3 +1058,194 @@ body {
   outline: none; /* Remove focus outline box */
 }
 
+@media screen and (max-width: 375px) {
+  .slider {
+    height: 155vw; /* Scale height down for smaller screens */
+  }
+
+  .hero-text {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .buttons-container {
+    margin-bottom: 500px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add vertical spacing */
+    align-items: center; /* Center buttons */
+  }
+
+  .square-button {
+    width: 100%; /* Full width for mobile screens */
+    max-width: 320px; /* Limit button width */
+  }
+  .horizontal-rectangle {
+    background-color: black;
+  }
+
+  #about-me-header {
+    padding-top: 100px;
+  }
+  .about-me-container {
+    padding-left: 90px;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center-align text */
+    gap: 20px; /* Add space between the image and text */
+  }
+
+  .about-me-image {
+      width: 300px; /* Resize the image to fit the screen */
+      height: 300px;;
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Optional: Make the image circular */
+  }
+
+  .about-me-text {
+    max-width: 80%; /* Constrain the width for readability */
+  }
+  .role-container {
+    display: flex; /* Ensure the static and dynamic text are inline */
+    justify-content: center; /* Center the text */
+    align-items: center; /* Vertically center the text */
+    width: 80%; /* Make the role container wider */
+    max-width: 300px; /* Set a maximum width */
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 30px; /* Add space below the role container */
+  }
+
+  .about-me-text p {
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    margin: 10px 0; /* Add space between paragraphs */
+    margin-left: -110px;
+  }
+
+  .static-text {
+    white-space: nowrap; /* Prevent wrapping of static text */
+    margin-left: -30px;
+}
+
+  /* General container adjustments */
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    padding-top: 55px;
+  }
+
+  /* Rounded Rectangle becomes a square */
+  .rounded-rectangle {
+    width: 93%; /* Full width */
+    max-width: 375px; /* Constrain to screen size */
+    height: auto; /* Maintain aspect ratio */
+    /* aspect-ratio: 1/1; */
+    background: linear-gradient(
+      180deg,
+      rgba(70, 205, 235, 0.5) 0%,
+      rgba(38, 111, 206, 0.5) 100%
+    );
+    border-radius: 10px; /* Smaller rounding */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Adjust content inside the rounded rectangle */
+  .rounded-rectangle .content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: -120px;
+    margin-left: 15px;
+  }
+
+  .rounded-rectangle .left-image {
+    width: 100%;
+    height: auto;
+    max-width: 900px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+  .rounded-rectangle .text-content {
+    font-size: 14px;
+    max-width: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  /* Make one square per row */
+  .square-grid {
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+  }
+
+  .rounded-square {
+    width: 100%; /* Full width */
+    max-width: 375px; /* Constrain to screen size */
+    aspect-ratio: 1 / 1;
+    background: rgb(24, 57, 95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .square-image {
+    width: 100%;
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .project-name {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .text-content {
+    font-size: 18px; /* Larger text size */
+    color: white;
+    text-align: center;
+    line-height: 1.6; /* Improve readability */
+  }
+
+  .learn-btn {
+    font-size: 16px; /* Slightly larger button text */
+    padding: 12px 20px; /* Add padding for better click area */
+    margin-top: 15px; /* Space above button */
+  }
+
+  .timeline {
+    padding-left: 20px; /* Adjust for smaller devices */
+    padding-right: 20px;
+    max-height: 2950px;
+  }
+
+  .timeline::after {
+    left: 85px; /* Adjust line position for smaller screens */
+  }
+
+  .container {
+    width: 100%; /* Ensure full width for smaller screens */
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 50px; /* Ensure alignment with timeline line */
+  }
+
+  .container.right {
+    left: 0; /* Align containers for small screens */
+  }
+
+}
