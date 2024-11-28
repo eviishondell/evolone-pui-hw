@@ -3,98 +3,179 @@
 <mark>Please sign up for the study</mark> at [https://tinyurl.com/pui-study](https://tinyurl.com/pui-study) to allow us to use your submission to create a better GenAI assistant for designers!
 
 ---
-
-# **FP4 \- Final Project Writeup**
+## **FP4 \- Final Project Writeup**
 
 Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) to make your writeup more organized, and you can preview your markdown file in VSCode [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). 
 
 
 ## Part 1: Website Description
 
-Describe your website (300 words).
+# **Describe your website (300 words).**
+My portfolio website is an interactive and responsive platform designed to showcase my professional skills, academic background, and innovative projects. The purpose of the website is to provide a comprehensive overview of my expertise in software engineering, design, and research, while also creating a visually appealing and engaging user experience. It serves as a digital representation of my professional brand, intended to attract potential employers, collaborators, and mentors.
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+The website includes several key sections, each meticulously designed to convey specific information. The "About Me" section introduces my educational background and research interests, highlighting my current focus on human-computer interaction and the development of accessible technologies. It also features a dynamic role-changing animation to add a personal and interactive touch.
+
+The "Projects" section showcases significant academic and personal projects, such as innovative mental health visualizations and color picker prototypes. Each project is presented with detailed descriptions, images, and links to explore further, ensuring clarity and engagement.
+
+Additionally, the "Resume" section provides a downloadable version of my professional CV, enabling quick access for recruiters. The website is connected to external profiles, such as GitHub and LinkedIn, ensuring seamless navigation for visitors seeking more in-depth information or collaboration opportunities.
+
+The website’s design emphasizes accessibility and responsiveness, offering a consistent and user-friendly experience across devices. Vibrant colors, smooth transitions, and a clean layout enhance the website's visual appeal while ensuring optimal readability. The site is structured to engage users through intuitive navigation, well-organized content, and dynamic interactive elements.
+
+This portfolio website not only reflects my technical and creative capabilities but also positions me as a professional ready to contribute to impactful projects. It is a powerful tool for fostering meaningful connections and showcasing my journey in technology and design.
+
+## **1. What is the purpose of your website?**
+The purpose of this website is to showcase my professional portfolio, including my skills, projects, and experiences, in a visually appealing and organized manner. It serves as an interactive platform for potential employers, collaborators, or mentors to learn more about my expertise and accomplishments.
+
+---
+
+## **2. Who is the target audience?**
+The target audience includes:
+- **Recruiters and Hiring Managers:** Seeking candidates for roles in software engineering, design, and research.
+- **Collaborators and Mentors:** Professionals interested in connecting or collaborating on innovative projects.
+- **Peers and Classmates:** Individuals interested in exploring shared interests and gaining inspiration for their own portfolios.
+
+---
+
+## **3. What information do you convey with your website?**
+The website conveys:
+- **About Me Section:** My educational background, current academic pursuits, and research interests in human-computer interaction.
+- **Project Details:** A collection of significant projects, including technical implementation, design goals, and outcomes, with a focus on accessibility and innovation.
+- **Resume Section:** A downloadable PDF of my resume, highlighting my skills, professional experiences, and achievements.
+- **Contact Links:** Direct links to my GitHub, LinkedIn, and other platforms for further engagement.
+
+---
+
+## **4. How is it interesting and engaging?**
+- **Interactive Design:** The website features dynamic elements, such as cycling roles and smooth transitions, to keep the audience engaged.
+- **Responsiveness:** It is optimized for different screen sizes, ensuring a seamless experience on both desktop and mobile devices.
+- **Visual Appeal:** A clean layout with vibrant colors and images makes the content visually compelling.
+- **Personal Touch:** The use of real projects, personalized descriptions, and an interactive "About Me" section adds authenticity and relatability, making the website stand out.
 
 ## Part 2: User Interaction
 
-How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
+Below is a list of user interactions implemented in the website, along with instructions on how to reproduce them:
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. **Navigation Between Pages**  
+   - **Interaction Type:** Click  
+   - **Reproduction Steps:** Click on the navigation links ("About Me," "Projects," "Resume") at the top of any page to navigate between different sections of the website.
+
+2. **Dynamic Role Animation (About Me Page)**  
+   - **Interaction Type:** Auto-play Animation  
+   - **Reproduction Steps:** Visit the "About Me" page, and observe the dynamic role cycling in the text ("Software Engineer," "Designer," "Researcher") with corresponding color changes every 2 seconds.
+
+3. **Project Exploration (Projects Page)**  
+   - **Interaction Type:** Click  
+   - **Reproduction Steps:** On the "Projects" page, click on any project card (e.g., "Color Picker," "PMDD Project") to navigate to a detailed description page for that project.
+
+4. **Resume Event Hover Effect (Resume Page)**  
+   - **Interaction Type:** Hover  
+   - **Reproduction Steps:** Visit the "Resume" page and hover over the description text of any timeline event. The text turns blue to visually engage users and keep their focus on the content.
+
+5. **Resume Download**  
+   - **Interaction Type:** Click  
+   - **Reproduction Steps:** On the "Resume" page, click the "Export Resume PDF" button to download the PDF version of the resume.
+
+6. **Slideshow Navigation (Project Pages)**  
+   - **Interaction Type:** Click  
+   - **Reproduction Steps:** On project detail pages featuring a slideshow, click the left/right arrows to navigate between different images or use the dots to jump directly to a specific slide.
 
 ## Part 3: External Tool
 
-Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
+Below are the external tools used in the project, along with the rationale and their contributions:
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. **Font Awesome**  
+   * **Why did you choose to use it over other alternatives?**  
+     Font Awesome is a widely-used, lightweight icon library that provides a comprehensive set of icons with ease of implementation. Its accessibility and scalability made it an ideal choice for this project.  
+   * **How you used it?**  
+     Font Awesome was used to add social media icons (e.g., GitHub, LinkedIn) in the navigation bar and footer. These icons enhance the website’s visual appeal and link to relevant user profiles.  
+   * **What does it add to your website?**  
+     It adds professional-looking, recognizable icons that improve user navigation and make the website visually engaging.
+
+2. **Intersection Observer API**  
+   * **Why did you choose to use it over other alternatives?**  
+     The Intersection Observer API provides an efficient way to handle visibility-based animations without performance overhead, unlike manual event listeners.  
+   * **How you used it?**  
+     It was used on the resume page to detect when timeline events enter the viewport, applying animation effects dynamically for a polished user experience.  
+   * **What does it add to your website?**  
+     It enhances the interactivity and visual flow of the timeline, providing users with smooth, engaging animations as they scroll.
+
+3. **JavaScript SetInterval for Dynamic Role Animation**  
+   * **Why did you choose to use it over other alternatives?**  
+     JavaScript’s `setInterval` is lightweight and integrates seamlessly into web applications without additional dependencies.  
+   * **How you used it?**  
+     It was used on the "About Me" page to implement the dynamic role animation, cycling through roles like "Software Engineer" with color changes every 2 seconds.  
+   * **What does it add to your website?**  
+     It introduces dynamic content that captures user attention and reflects the subject's multifaceted professional identity.
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+During the development process, several changes were made to refine the website based on usability and aesthetic considerations. I slowed down the hero animation on the homepage to ensure it wouldn't distract users, allowing them to focus on the content while maintaining a polished design. Background colors were adjusted across the site to enhance text legibility, improving accessibility and user experience. 
+
+Initially, the resume section used blocks to represent roles and experiences. I transitioned to a timeline format, which provided a more streamlined and visually appealing way to display career progression. Additionally, I added consistent formatting for the project content, ensuring each project included clear descriptions and images in a unified layout to improve readability and engagement.
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+One challenge was ensuring the website's responsiveness across various screen sizes while maintaining its visual appeal and functionality. Adjusting the layout and scaling elements like the slider and timeline required careful use of CSS media queries and testing on multiple devices. Additionally, implementing accessible features, such as hover effects and readable color contrasts, involved iterative testing with tools like WAVE to address potential accessibility issues. (Responsive for Desktop and 375x667)
+
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
+### Tools Used:
+1. **ChatGPT**
+   - **Purpose**: ChatGPT was used to debug complex errors, provide design feedback, and answer technical questions about media queries and responsive design.
+   - **How I Used It**: I consulted ChatGPT when I encountered errors that were difficult to diagnose using the browser console or inspecting elements. Additionally, I asked about color choices that would effectively reflect the mood of each project and sought guidance on which screen sizes to prioritize for responsiveness.
+   - **Evaluation**: ChatGPT was instrumental in identifying root causes of errors and suggesting effective solutions. Its recommendations for color schemes and screen sizes were thoughtful and well-suited to my project goals, though I manually tested and refined its suggestions to ensure a cohesive user experience.
+   - **Impact on Project**: It helped resolve coding issues efficiently, enhanced the aesthetic appeal of the site, and ensured that the design was optimized for commonly used screen sizes.
 
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
+2. **WAVE Accessibility Tool**
+   - **Purpose**: WAVE was used to identify and fix accessibility issues to ensure the website complied with web accessibility standards.
+   - **How I Used It**: After completing each page, I used WAVE to check for color contrast, valid alt-text, and proper ARIA roles. The tool highlighted any potential accessibility violations, which I then addressed.
+   - **Evaluation**: WAVE was excellent at identifying accessibility concerns. Although some of the flagged issues required manual interpretation to decide the best course of action, it ensured that my website met accessibility standards.
+   - **Impact on Project**: WAVE ensured that the website was accessible to a broader audience, demonstrating a commitment to inclusivity and adherence to best practices.
+
+---
+
+### Reflection:
+ChatGPT and WAVE were invaluable tools in completing this project. ChatGPT provided timely debugging support and detailed explanations for technical concepts like media queries, enabling me to make the site responsive across various screen sizes. Its color scheme suggestions aligned with the desired mood and identity of each project, adding visual appeal. WAVE ensured that the site was accessible and compliant with web standards, helping me address issues that I might have overlooked.
+
+While ChatGPT’s insights were often spot-on, I remained critical of its suggestions, validating them through testing and refinement. For example, while ChatGPT suggested specific color schemes, I tested those colors to ensure they met contrast requirements and matched the overall aesthetic. Similarly, its explanations of media queries guided me in creating a responsive design but required practical application and iteration.
+
+The main challenge was balancing reliance on AI tools with manual oversight to ensure the solutions fit my specific project. ChatGPT sometimes provided generic responses that needed tailoring, and interpreting WAVE’s feedback occasionally required additional research.
+
+Using these tools not only enhanced the technical quality of my website but also saved time on debugging and design decisions. They matched my expectations in terms of improving efficiency and accessibility while emphasizing the importance of critical evaluation. Overall, they made the project smoother to implement and more professional in its final presentation.
 
 ### Usage Experiences by Project Aspects
 
-Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
+For the following aspects of this project, the table summarizes how the GenAI tools were used and their impact on productivity:
 
-For the following aspects of your project, edit the corresponding table cell to answer:
-- *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
-- *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
-
-| Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
+| Tool Name | Ratings | Design | Plan | Write Code | Debug | Other (e.g., Accessibility) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | Yes | Yes | Yes | Yes | Yes |
+| ChatGPT | Productivity | 7 | 6 | 6 | 7 | 6 |
+| WAVE | Usage | Yes | No | No | No | Yes |
+| WAVE | Productivity | 7 | N/A | N/A | N/A | 7 |
 
 
 ### Usage Reflection
+1. **ChatGPT**
+   - Matched Expectations: Provided practical solutions for debugging.
+   - Did Not Match Expectations: Occasionally suggested overly complex solutions for simple issues.
+   - Use Pattern: Accepted suggestions for responsive design but modified generic breakpoints for specific devices.
 
-> Impact on your design and plan 
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+2. **WAVE**
+   - Matched Expectations: Identified accessibility issues effectively.
+   - Did Not Match Expectations: Flagged certain non-issues as concerns, requiring manual verification.
+   - Use Pattern: Addressed flagged issues unless deemed unnecessary after manual review.
 
-> Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+**Pros and Cons**
+- **ChatGPT**
+  - **Pros**: Streamlined debugging and design adjustments.
+  - **Cons**: Occasionally required additional refinement.
+- **WAVE**
+  - **Pros**: Ensured compliance with accessibility standards.
+  - **Cons**: Flagged non-issues, creating extra work.
 
-
-> Pros and cons of using GenAI tools
-* Pros
-  1. Tool1: 
-  2. Tool2:
-* Cons
-  1. Tool1: 
-  2. Tool2:
-
+---
 
 ### Usage Log
 
@@ -105,17 +186,35 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 
 ---
 
+### Appendix
+
+**Home Page**
+
+**Project Page**
+**Color Picker**
+**Cycle Deviation**
+**Phonebooth**
+**Siri Face**
+**PMDD Page**
+**Resume Page**
+
+
+
+
 # **FP3 \- Final Project Check-in**
 
 Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- Resume has a timeline format instaed of blocks
+- Content decided for the project pages 
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- [ ] Debugging
+- [ ] Complex animation
+- [ ] New ideas
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
