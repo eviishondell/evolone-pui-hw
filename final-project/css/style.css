@@ -441,7 +441,7 @@ body {
 
 .learn-btn {
   border: 2px solid #FFF;
-background: #497BAF;
+background: #0a4178;
 padding: 10px;
 text-decoration: none;
 color: white;
@@ -450,6 +450,8 @@ justify-content: center;
 
 .learn-btn:hover {
 cursor: pointer;
+color: white;
+background: #022950;
 }
 .bold-text {
   font-weight: bold;
