@@ -227,14 +227,17 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 ![Portfolio Screenshot](../final-project/images/cycle-dev-page2.jpg)
 
 **Phonebooth**
+
 ![Portfolio Screenshot](../final-project/images/phonebooth-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/phonebooth-page2.jpg)
 
 **Siri Face**
+
 ![Portfolio Screenshot](../final-project/images/siri-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/siri-page2.jpg)
 
 **PMDD Page**
+
 ![Portfolio Screenshot](../final-project/images/pmdd-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/pmdd-page2.jpg)
 
