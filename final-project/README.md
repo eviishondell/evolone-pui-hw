@@ -243,7 +243,6 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 ![Portfolio Screenshot](../final-project/images/resume-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/resume-page2.jpg)
 
-
 # **FP3 \- Final Project Check-in**
 
 Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
