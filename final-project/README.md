@@ -202,6 +202,9 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
 
 ![Portfolio Screenshot](../final-project/images/gpt-error.png)
+
+- Calculating the animation for the CSS hero images on the Landing Page
+- Color Check for legibility
 ---
 
 ### Appendix
