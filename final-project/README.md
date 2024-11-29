@@ -211,6 +211,8 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 ![Portfolio Screenshot](../final-project/images/home-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/home-page2.jpg)
 **Project Page**
+![Portfolio Screenshot](../final-project/images/project-page1.jpg)
+![Portfolio Screenshot](../final-project/images/project-page2.jpg)
 **Color Picker**
 **Cycle Deviation**
 **Phonebooth**
