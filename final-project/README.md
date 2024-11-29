@@ -210,15 +210,39 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 
 ![Portfolio Screenshot](../final-project/images/home-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/home-page2.jpg)
+
 **Project Page**
+
 ![Portfolio Screenshot](../final-project/images/project-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/project-page2.jpg)
+
 **Color Picker**
+
+![Portfolio Screenshot](../final-project/images/color-picker-page1.jpg)
+![Portfolio Screenshot](../final-project/images/color-picker-page2.jpg)
+
 **Cycle Deviation**
+
+![Portfolio Screenshot](../final-project/images/cycle-dev-page1.jpg)
+![Portfolio Screenshot](../final-project/images/cycle-dev-page2.jpg)
+
 **Phonebooth**
+![Portfolio Screenshot](../final-project/images/phonebooth-page1.jpg)
+![Portfolio Screenshot](../final-project/images/phonebooth-page2.jpg)
+
 **Siri Face**
+![Portfolio Screenshot](../final-project/images/siri-page1.jpg)
+![Portfolio Screenshot](../final-project/images/siri-page2.jpg)
+
 **PMDD Page**
+![Portfolio Screenshot](../final-project/images/pmdd-page1.jpg)
+![Portfolio Screenshot](../final-project/images/pmdd-page2.jpg)
+
 **Resume Page**
+
+![Portfolio Screenshot](../final-project/images/resume-page1.jpg)
+![Portfolio Screenshot](../final-project/images/resume-page2.jpg)
+
 
 # **FP3 \- Final Project Check-in**
 
