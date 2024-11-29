@@ -207,6 +207,7 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 ### Appendix
 
 **Home Page**
+
 ![Portfolio Screenshot](../final-project/images/home-page1.jpg)
 ![Portfolio Screenshot](../final-project/images/home-page2.jpg)
 **Project Page**
