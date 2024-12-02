@@ -168,7 +168,7 @@ body {
   margin: 20px auto;
   gap: 20px;
   padding: 20px;
-  background-color: rgba(20, 70, 81, 0.15);
+  /* background-color: rgba(20, 70, 81, 0.15); */
   border-radius: 8px;
 }
 
@@ -913,7 +913,7 @@ body {
 }
 
 /* The actual timeline (the vertical ruler) */
-.timeline::after {
+.timeline::before {
   content: '';
   position: absolute;
   width: 6px; /* Thickness of the vertical line */
@@ -1005,7 +1005,7 @@ body {
 
 
 .content:hover ul {
-  color: #007bff; /* Bright blue for the list items */
+  color: #46cdeb; /* Bright blue for the list items */
   transition: color 0.3s ease; /* Smooth transition */
 }
 
@@ -1025,13 +1025,26 @@ body {
   }
 
 /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  /* .container::before {
     left: 60px;
+    z-index: 1;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
+  } */
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 50%; /* Center the dot vertically relative to its container */
+    left: 50%; /* Align to the timeline center */
+    width: 15px;
+    height: 15px;
+    background-color: black; /* Dot color */
+    border: 4px solid white; /* Add a border if necessary for better contrast */
+    border-radius: 50%; /* Make the dot circular */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensures dots are in front of the line */
   }
-
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
     left: 15px;
@@ -1233,12 +1246,26 @@ body {
     padding-left: 20px; /* Adjust for smaller devices */
     padding-right: 20px;
     max-height: 2950px;
+    position: relative;
+    
   }
 
   .timeline::after {
     left: 85px; /* Adjust line position for smaller screens */
   }
-
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Centered */
+    width: 4px;
+    height: 100%;
+    background: white; /* The vertical line color */
+    z-index: 0; /* Line goes behind the dots */
+    transform: translateX(-50%);
+  }
+  
+  
   .container {
     width: 100%; /* Ensure full width for smaller screens */
   }
@@ -1252,4 +1279,34 @@ body {
     left: 0; /* Align containers for small screens */
   }
 
+}
+.highlighted-proj-header{
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+}
+/* Add this to your CSS file */
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px); /* Start below the viewport */
+    opacity: 0; /* Invisible at start */
+  }
+  100% {
+    transform: translateY(0); /* End in normal position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Default container state */
+.container {
+  opacity: .3; /* Initially hidden */
+  transform: translateY(50px); /* Start slightly off-screen */
+  transition: transform 0.8s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Visible (animated) state */
+.container.emphasized {
+  animation: slideIn 0.7s ease forwards; /* Slide into view */
 }

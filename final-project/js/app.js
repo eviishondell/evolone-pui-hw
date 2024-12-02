@@ -79,3 +79,24 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// Add this to your app.js file
+
+document.addEventListener("DOMContentLoaded", () => {
+  const containers = document.querySelectorAll(".container"); // Select all containers
+
+  const observerOptions = {
+    threshold: 0.5, // Trigger when 50% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("emphasized"); // Add animation class
+      }
+    });
+  }, observerOptions);
+
+  containers.forEach((container) => observer.observe(container)); // Observe each container
+});
+
